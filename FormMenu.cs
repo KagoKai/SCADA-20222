@@ -27,5 +27,11 @@ namespace test
         {
             Application.Exit();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dateLabel.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
+            timeLabel.Text = DateTime.Now.ToString("hh:mm tt");
+        }
     }
 }
