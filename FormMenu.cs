@@ -12,6 +12,11 @@ namespace test
 {
     public partial class FormMenu : Form
     {
+        protected override void OnLoad(EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            base.OnLoad(e);
+        }
         public FormMenu()
         {
             InitializeComponent();
@@ -32,6 +37,12 @@ namespace test
         {
             dateLabel.Text = DateTime.Now.ToString("dddd, dd MMMM yyyy");
             timeLabel.Text = DateTime.Now.ToString("hh:mm tt");
+        }
+
+        private void buttonCIP_Click(object sender, EventArgs e)
+        {
+            FormCIP cip = new FormCIP();
+            cip.ShowDialog();
         }
     }
 }

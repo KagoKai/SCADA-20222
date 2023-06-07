@@ -48,7 +48,7 @@ namespace test
             this.standardControl4 = new SymbolFactoryDotNet.StandardControl();
             this.buttonLang = new System.Windows.Forms.Button();
             this.buttonHoa = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonCIP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
@@ -305,7 +305,7 @@ namespace test
             // 
             // buttonHoa
             // 
-            this.buttonHoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonHoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonHoa.Location = new System.Drawing.Point(525, 711);
             this.buttonHoa.Name = "buttonHoa";
@@ -314,22 +314,23 @@ namespace test
             this.buttonHoa.Text = "Tank hoa";
             this.buttonHoa.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // buttonCIP
             // 
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(28, 594);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(131, 47);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "Hệ CIP";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonCIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCIP.Location = new System.Drawing.Point(28, 594);
+            this.buttonCIP.Name = "buttonCIP";
+            this.buttonCIP.Size = new System.Drawing.Size(131, 47);
+            this.buttonCIP.TabIndex = 26;
+            this.buttonCIP.Text = "Hệ CIP";
+            this.buttonCIP.UseVisualStyleBackColor = true;
+            this.buttonCIP.Click += new System.EventHandler(this.buttonCIP_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1582, 853);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.buttonCIP);
             this.Controls.Add(this.buttonHoa);
             this.Controls.Add(this.buttonLang);
             this.Controls.Add(this.standardControl4);
@@ -346,6 +347,7 @@ namespace test
             this.Controls.Add(this.standardControl1);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.logoutButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FormMenu";
@@ -382,6 +384,6 @@ namespace test
         private SymbolFactoryDotNet.StandardControl standardControl4;
         private System.Windows.Forms.Button buttonLang;
         private System.Windows.Forms.Button buttonHoa;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonCIP;
     }
 }
