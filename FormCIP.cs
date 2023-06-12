@@ -25,5 +25,9 @@ namespace test
         {
             this.Close();
         }
+        private void valve_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
