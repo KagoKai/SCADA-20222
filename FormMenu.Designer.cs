@@ -60,6 +60,7 @@ namespace test
             // logoutButton
             // 
             this.logoutButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.logoutButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.logoutButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutButton.Location = new System.Drawing.Point(1438, 738);
             this.logoutButton.Margin = new System.Windows.Forms.Padding(4);
@@ -67,12 +68,13 @@ namespace test
             this.logoutButton.Size = new System.Drawing.Size(131, 47);
             this.logoutButton.TabIndex = 0;
             this.logoutButton.Text = "Đăng xuất";
-            this.logoutButton.UseVisualStyleBackColor = true;
+            this.logoutButton.UseVisualStyleBackColor = false;
             this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
             // 
             // quitButton
             // 
             this.quitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.quitButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.quitButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quitButton.Location = new System.Drawing.Point(1438, 793);
             this.quitButton.Margin = new System.Windows.Forms.Padding(4);
@@ -80,7 +82,7 @@ namespace test
             this.quitButton.Size = new System.Drawing.Size(131, 47);
             this.quitButton.TabIndex = 1;
             this.quitButton.Text = "Thoát";
-            this.quitButton.UseVisualStyleBackColor = true;
+            this.quitButton.UseVisualStyleBackColor = false;
             this.quitButton.Click += new System.EventHandler(this.quitButton_Click);
             // 
             // standardControl1
@@ -239,6 +241,7 @@ namespace test
             // 
             // buttonMalt
             // 
+            this.buttonMalt.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonMalt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonMalt.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonMalt.Location = new System.Drawing.Point(727, 441);
@@ -246,10 +249,11 @@ namespace test
             this.buttonMalt.Size = new System.Drawing.Size(151, 42);
             this.buttonMalt.TabIndex = 18;
             this.buttonMalt.Text = "Tank malt";
-            this.buttonMalt.UseVisualStyleBackColor = true;
+            this.buttonMalt.UseVisualStyleBackColor = false;
             // 
             // buttonGao
             // 
+            this.buttonGao.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonGao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGao.Location = new System.Drawing.Point(321, 441);
             this.buttonGao.Name = "buttonGao";
@@ -257,10 +261,12 @@ namespace test
             this.buttonGao.TabIndex = 19;
             this.buttonGao.Text = "Tank gạo";
             this.buttonGao.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.buttonGao.UseVisualStyleBackColor = true;
+            this.buttonGao.UseVisualStyleBackColor = false;
+            this.buttonGao.Click += new System.EventHandler(this.buttonGao_Click);
             // 
             // buttonLoc
             // 
+            this.buttonLoc.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonLoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLoc.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonLoc.Location = new System.Drawing.Point(1128, 441);
@@ -268,7 +274,7 @@ namespace test
             this.buttonLoc.Size = new System.Drawing.Size(151, 42);
             this.buttonLoc.TabIndex = 20;
             this.buttonLoc.Text = "Tank lọc";
-            this.buttonLoc.UseVisualStyleBackColor = true;
+            this.buttonLoc.UseVisualStyleBackColor = false;
             // 
             // standardControl4
             // 
@@ -295,16 +301,18 @@ namespace test
             // 
             // buttonLang
             // 
+            this.buttonLang.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonLang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLang.Location = new System.Drawing.Point(939, 710);
             this.buttonLang.Name = "buttonLang";
             this.buttonLang.Size = new System.Drawing.Size(151, 42);
             this.buttonLang.TabIndex = 23;
             this.buttonLang.Text = "Tank lắng xoáy";
-            this.buttonLang.UseVisualStyleBackColor = true;
+            this.buttonLang.UseVisualStyleBackColor = false;
             // 
             // buttonHoa
             // 
+            this.buttonHoa.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonHoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonHoa.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonHoa.Location = new System.Drawing.Point(525, 711);
@@ -312,23 +320,25 @@ namespace test
             this.buttonHoa.Size = new System.Drawing.Size(152, 42);
             this.buttonHoa.TabIndex = 25;
             this.buttonHoa.Text = "Tank hoa";
-            this.buttonHoa.UseVisualStyleBackColor = true;
+            this.buttonHoa.UseVisualStyleBackColor = false;
             // 
             // buttonCIP
             // 
+            this.buttonCIP.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonCIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCIP.Location = new System.Drawing.Point(28, 594);
             this.buttonCIP.Name = "buttonCIP";
             this.buttonCIP.Size = new System.Drawing.Size(131, 47);
             this.buttonCIP.TabIndex = 26;
             this.buttonCIP.Text = "Hệ CIP";
-            this.buttonCIP.UseVisualStyleBackColor = true;
+            this.buttonCIP.UseVisualStyleBackColor = false;
             this.buttonCIP.Click += new System.EventHandler(this.buttonCIP_Click);
             // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1582, 853);
             this.Controls.Add(this.buttonCIP);
             this.Controls.Add(this.buttonHoa);

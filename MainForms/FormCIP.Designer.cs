@@ -136,15 +136,8 @@ namespace test
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.standardControl97 = new SymbolFactoryDotNet.StandardControl();
             this.label8 = new System.Windows.Forms.Label();
-            this.standardControl99 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl100 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl101 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl102 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl98 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl103 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl104 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl105 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl106 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl107 = new SymbolFactoryDotNet.StandardControl();
@@ -185,6 +178,26 @@ namespace test
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl48 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl49 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl96 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl99 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl100 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl97 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl101 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl102 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl43 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl46 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl47 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl14 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl6 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl9 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl12 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl103 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl104 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl110 = new SymbolFactoryDotNet.StandardControl();
+            this.standardControl114 = new SymbolFactoryDotNet.StandardControl();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
@@ -281,14 +294,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl93)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl94)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl95)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl97)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl99)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl100)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl101)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl102)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl98)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl104)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl105)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl106)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl107)).BeginInit();
@@ -322,6 +328,26 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl135)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl136)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl137)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl96)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl99)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl100)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl97)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl101)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl102)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl104)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl110)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl114)).BeginInit();
             this.SuspendLayout();
             // 
             // standardControl1
@@ -463,7 +489,8 @@ namespace test
             this.standardControl15.BlinkColor = System.Drawing.Color.Red;
             this.standardControl15.Category = "1PIPE.cat2";
             this.standardControl15.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl15.DebugData"));
-            this.standardControl15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl15.FillColor = System.Drawing.Color.Lime;
+            this.standardControl15.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl15.Location = new System.Drawing.Point(1034, 553);
             this.standardControl15.Name = "standardControl15";
             this.standardControl15.Size = new System.Drawing.Size(31, 41);
@@ -486,7 +513,8 @@ namespace test
             this.standardControl21.BlinkColor = System.Drawing.Color.Red;
             this.standardControl21.Category = "1PIPE.cat2";
             this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
-            this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl21.FillColor = System.Drawing.Color.Lime;
+            this.standardControl21.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl21.Location = new System.Drawing.Point(422, 658);
             this.standardControl21.Name = "standardControl21";
             this.standardControl21.Size = new System.Drawing.Size(28, 19);
@@ -509,7 +537,8 @@ namespace test
             this.standardControl22.BlinkColor = System.Drawing.Color.Red;
             this.standardControl22.Category = "1PIPE.cat2";
             this.standardControl22.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl22.DebugData"));
-            this.standardControl22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl22.FillColor = System.Drawing.Color.Lime;
+            this.standardControl22.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl22.Location = new System.Drawing.Point(595, 667);
             this.standardControl22.Name = "standardControl22";
             this.standardControl22.Size = new System.Drawing.Size(154, 10);
@@ -532,7 +561,8 @@ namespace test
             this.standardControl23.BlinkColor = System.Drawing.Color.Red;
             this.standardControl23.Category = "1PIPE.cat2";
             this.standardControl23.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl23.DebugData"));
-            this.standardControl23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl23.FillColor = System.Drawing.Color.Lime;
+            this.standardControl23.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl23.Location = new System.Drawing.Point(444, 667);
             this.standardControl23.Name = "standardControl23";
             this.standardControl23.Size = new System.Drawing.Size(154, 10);
@@ -555,7 +585,8 @@ namespace test
             this.standardControl24.BlinkColor = System.Drawing.Color.Red;
             this.standardControl24.Category = "1PIPE.cat2";
             this.standardControl24.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl24.DebugData"));
-            this.standardControl24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl24.FillColor = System.Drawing.Color.Lime;
+            this.standardControl24.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl24.Location = new System.Drawing.Point(894, 667);
             this.standardControl24.Name = "standardControl24";
             this.standardControl24.Size = new System.Drawing.Size(155, 10);
@@ -578,7 +609,8 @@ namespace test
             this.standardControl25.BlinkColor = System.Drawing.Color.Red;
             this.standardControl25.Category = "1PIPE.cat2";
             this.standardControl25.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl25.DebugData"));
-            this.standardControl25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl25.FillColor = System.Drawing.Color.Lime;
+            this.standardControl25.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl25.Location = new System.Drawing.Point(744, 667);
             this.standardControl25.Name = "standardControl25";
             this.standardControl25.Size = new System.Drawing.Size(152, 10);
@@ -601,7 +633,8 @@ namespace test
             this.standardControl26.BlinkColor = System.Drawing.Color.Red;
             this.standardControl26.Category = "1PIPE.cat2";
             this.standardControl26.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl26.DebugData"));
-            this.standardControl26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl26.FillColor = System.Drawing.Color.Lime;
+            this.standardControl26.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl26.Location = new System.Drawing.Point(1012, 667);
             this.standardControl26.Name = "standardControl26";
             this.standardControl26.Size = new System.Drawing.Size(152, 10);
@@ -643,7 +676,8 @@ namespace test
             this.standardControl31.BlinkColor = System.Drawing.Color.Red;
             this.standardControl31.Category = "1PIPE.cat2";
             this.standardControl31.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl31.DebugData"));
-            this.standardControl31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl31.FillColor = System.Drawing.Color.Lime;
+            this.standardControl31.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl31.Location = new System.Drawing.Point(1196, 656);
             this.standardControl31.Name = "standardControl31";
             this.standardControl31.Size = new System.Drawing.Size(40, 10);
@@ -666,7 +700,8 @@ namespace test
             this.standardControl32.BlinkColor = System.Drawing.Color.Red;
             this.standardControl32.Category = "1PIPE.cat2";
             this.standardControl32.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl32.DebugData"));
-            this.standardControl32.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl32.FillColor = System.Drawing.Color.Lime;
+            this.standardControl32.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl32.Location = new System.Drawing.Point(1232, 647);
             this.standardControl32.Name = "standardControl32";
             this.standardControl32.Size = new System.Drawing.Size(22, 19);
@@ -689,7 +724,8 @@ namespace test
             this.standardControl33.BlinkColor = System.Drawing.Color.Red;
             this.standardControl33.Category = "1PIPE.cat2";
             this.standardControl33.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl33.DebugData"));
-            this.standardControl33.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl33.FillColor = System.Drawing.Color.Lime;
+            this.standardControl33.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl33.Location = new System.Drawing.Point(1242, 359);
             this.standardControl33.Name = "standardControl33";
             this.standardControl33.Size = new System.Drawing.Size(12, 162);
@@ -699,6 +735,7 @@ namespace test
             // returnButton
             // 
             this.returnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.returnButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.returnButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.returnButton.Location = new System.Drawing.Point(1438, 793);
             this.returnButton.Margin = new System.Windows.Forms.Padding(4);
@@ -706,7 +743,7 @@ namespace test
             this.returnButton.Size = new System.Drawing.Size(131, 47);
             this.returnButton.TabIndex = 36;
             this.returnButton.Text = "Quay lại";
-            this.returnButton.UseVisualStyleBackColor = true;
+            this.returnButton.UseVisualStyleBackColor = false;
             this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // standardControl34
@@ -749,7 +786,8 @@ namespace test
             this.standardControl35.BlinkColor = System.Drawing.Color.Red;
             this.standardControl35.Category = "1PIPE.cat2";
             this.standardControl35.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl35.DebugData"));
-            this.standardControl35.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl35.FillColor = System.Drawing.Color.Lime;
+            this.standardControl35.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl35.Location = new System.Drawing.Point(1243, 609);
             this.standardControl35.Name = "standardControl35";
             this.standardControl35.Size = new System.Drawing.Size(10, 39);
@@ -772,7 +810,8 @@ namespace test
             this.standardControl36.BlinkColor = System.Drawing.Color.Red;
             this.standardControl36.Category = "1PIPE.cat2";
             this.standardControl36.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl36.DebugData"));
-            this.standardControl36.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl36.FillColor = System.Drawing.Color.Lime;
+            this.standardControl36.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl36.Location = new System.Drawing.Point(1242, 595);
             this.standardControl36.Name = "standardControl36";
             this.standardControl36.Size = new System.Drawing.Size(21, 19);
@@ -795,7 +834,8 @@ namespace test
             this.standardControl37.BlinkColor = System.Drawing.Color.Red;
             this.standardControl37.Category = "1PIPE.cat2";
             this.standardControl37.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl37.DebugData"));
-            this.standardControl37.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl37.FillColor = System.Drawing.Color.Lime;
+            this.standardControl37.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl37.Location = new System.Drawing.Point(1243, 516);
             this.standardControl37.Name = "standardControl37";
             this.standardControl37.Size = new System.Drawing.Size(19, 21);
@@ -818,7 +858,8 @@ namespace test
             this.standardControl38.BlinkColor = System.Drawing.Color.Red;
             this.standardControl38.Category = "1PIPE.cat2";
             this.standardControl38.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl38.DebugData"));
-            this.standardControl38.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl38.FillColor = System.Drawing.Color.Lime;
+            this.standardControl38.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl38.Location = new System.Drawing.Point(1241, 217);
             this.standardControl38.Name = "standardControl38";
             this.standardControl38.Size = new System.Drawing.Size(14, 162);
@@ -841,7 +882,8 @@ namespace test
             this.standardControl39.BlinkColor = System.Drawing.Color.Red;
             this.standardControl39.Category = "1PIPE.cat2";
             this.standardControl39.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl39.DebugData"));
-            this.standardControl39.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl39.FillColor = System.Drawing.Color.Lime;
+            this.standardControl39.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl39.Location = new System.Drawing.Point(1242, 205);
             this.standardControl39.Name = "standardControl39";
             this.standardControl39.Size = new System.Drawing.Size(21, 19);
@@ -864,7 +906,8 @@ namespace test
             this.standardControl40.BlinkColor = System.Drawing.Color.Red;
             this.standardControl40.Category = "1PIPE.cat2";
             this.standardControl40.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl40.DebugData"));
-            this.standardControl40.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl40.FillColor = System.Drawing.Color.Lime;
+            this.standardControl40.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl40.Location = new System.Drawing.Point(1254, 205);
             this.standardControl40.Name = "standardControl40";
             this.standardControl40.Size = new System.Drawing.Size(41, 10);
@@ -906,7 +949,8 @@ namespace test
             this.standardControl41.BlinkColor = System.Drawing.Color.Red;
             this.standardControl41.Category = "1PIPE.cat2";
             this.standardControl41.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl41.DebugData"));
-            this.standardControl41.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl41.FillColor = System.Drawing.Color.Lime;
+            this.standardControl41.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl41.Location = new System.Drawing.Point(1252, 254);
             this.standardControl41.Name = "standardControl41";
             this.standardControl41.Size = new System.Drawing.Size(41, 11);
@@ -929,7 +973,8 @@ namespace test
             this.standardControl42.BlinkColor = System.Drawing.Color.Red;
             this.standardControl42.Category = "1PIPE.cat2";
             this.standardControl42.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl42.DebugData"));
-            this.standardControl42.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl42.FillColor = System.Drawing.Color.Lime;
+            this.standardControl42.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl42.Location = new System.Drawing.Point(1252, 281);
             this.standardControl42.Name = "standardControl42";
             this.standardControl42.Size = new System.Drawing.Size(41, 58);
@@ -952,7 +997,8 @@ namespace test
             this.standardControl44.BlinkColor = System.Drawing.Color.Red;
             this.standardControl44.Category = "1PIPE.cat2";
             this.standardControl44.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl44.DebugData"));
-            this.standardControl44.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl44.FillColor = System.Drawing.Color.Lime;
+            this.standardControl44.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl44.Location = new System.Drawing.Point(1252, 331);
             this.standardControl44.Name = "standardControl44";
             this.standardControl44.Size = new System.Drawing.Size(41, 58);
@@ -975,7 +1021,8 @@ namespace test
             this.standardControl45.BlinkColor = System.Drawing.Color.Red;
             this.standardControl45.Category = "1PIPE.cat2";
             this.standardControl45.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl45.DebugData"));
-            this.standardControl45.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl45.FillColor = System.Drawing.Color.Lime;
+            this.standardControl45.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl45.Location = new System.Drawing.Point(1252, 381);
             this.standardControl45.Name = "standardControl45";
             this.standardControl45.Size = new System.Drawing.Size(41, 58);
@@ -1074,7 +1121,8 @@ namespace test
             this.standardControl51.BlinkColor = System.Drawing.Color.Red;
             this.standardControl51.Category = "1PIPE.cat2";
             this.standardControl51.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl51.DebugData"));
-            this.standardControl51.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl51.FillColor = System.Drawing.Color.Lime;
+            this.standardControl51.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl51.Location = new System.Drawing.Point(1322, 254);
             this.standardControl51.Name = "standardControl51";
             this.standardControl51.Size = new System.Drawing.Size(41, 12);
@@ -1097,7 +1145,8 @@ namespace test
             this.standardControl52.BlinkColor = System.Drawing.Color.Red;
             this.standardControl52.Category = "1PIPE.cat2";
             this.standardControl52.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl52.DebugData"));
-            this.standardControl52.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl52.FillColor = System.Drawing.Color.Lime;
+            this.standardControl52.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl52.Location = new System.Drawing.Point(1322, 303);
             this.standardControl52.Name = "standardControl52";
             this.standardControl52.Size = new System.Drawing.Size(41, 14);
@@ -1120,7 +1169,8 @@ namespace test
             this.standardControl53.BlinkColor = System.Drawing.Color.Red;
             this.standardControl53.Category = "1PIPE.cat2";
             this.standardControl53.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl53.DebugData"));
-            this.standardControl53.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl53.FillColor = System.Drawing.Color.Lime;
+            this.standardControl53.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl53.Location = new System.Drawing.Point(1322, 353);
             this.standardControl53.Name = "standardControl53";
             this.standardControl53.Size = new System.Drawing.Size(41, 11);
@@ -1143,7 +1193,8 @@ namespace test
             this.standardControl54.BlinkColor = System.Drawing.Color.Red;
             this.standardControl54.Category = "1PIPE.cat2";
             this.standardControl54.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl54.DebugData"));
-            this.standardControl54.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl54.FillColor = System.Drawing.Color.Lime;
+            this.standardControl54.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl54.Location = new System.Drawing.Point(1322, 401);
             this.standardControl54.Name = "standardControl54";
             this.standardControl54.Size = new System.Drawing.Size(41, 16);
@@ -1166,7 +1217,8 @@ namespace test
             this.standardControl13.BlinkColor = System.Drawing.Color.Red;
             this.standardControl13.Category = "1PIPE.cat2";
             this.standardControl13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl13.DebugData"));
-            this.standardControl13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl13.FillColor = System.Drawing.Color.Lime;
+            this.standardControl13.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl13.Location = new System.Drawing.Point(1034, 627);
             this.standardControl13.Name = "standardControl13";
             this.standardControl13.Size = new System.Drawing.Size(31, 41);
@@ -1189,7 +1241,8 @@ namespace test
             this.standardControl16.BlinkColor = System.Drawing.Color.Red;
             this.standardControl16.Category = "1PIPE.cat2";
             this.standardControl16.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl16.DebugData"));
-            this.standardControl16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl16.FillColor = System.Drawing.Color.Lime;
+            this.standardControl16.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl16.Location = new System.Drawing.Point(828, 553);
             this.standardControl16.Name = "standardControl16";
             this.standardControl16.Size = new System.Drawing.Size(31, 41);
@@ -1232,7 +1285,8 @@ namespace test
             this.standardControl18.BlinkColor = System.Drawing.Color.Red;
             this.standardControl18.Category = "1PIPE.cat2";
             this.standardControl18.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl18.DebugData"));
-            this.standardControl18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl18.FillColor = System.Drawing.Color.Lime;
+            this.standardControl18.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl18.Location = new System.Drawing.Point(828, 627);
             this.standardControl18.Name = "standardControl18";
             this.standardControl18.Size = new System.Drawing.Size(31, 41);
@@ -1255,7 +1309,8 @@ namespace test
             this.standardControl5.BlinkColor = System.Drawing.Color.Red;
             this.standardControl5.Category = "1PIPE.cat2";
             this.standardControl5.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl5.DebugData"));
-            this.standardControl5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl5.FillColor = System.Drawing.Color.Lime;
+            this.standardControl5.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl5.Location = new System.Drawing.Point(416, 627);
             this.standardControl5.Name = "standardControl5";
             this.standardControl5.Size = new System.Drawing.Size(31, 41);
@@ -1298,7 +1353,8 @@ namespace test
             this.standardControl7.BlinkColor = System.Drawing.Color.Red;
             this.standardControl7.Category = "1PIPE.cat2";
             this.standardControl7.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl7.DebugData"));
-            this.standardControl7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl7.FillColor = System.Drawing.Color.Lime;
+            this.standardControl7.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl7.Location = new System.Drawing.Point(416, 553);
             this.standardControl7.Name = "standardControl7";
             this.standardControl7.Size = new System.Drawing.Size(31, 41);
@@ -1321,7 +1377,8 @@ namespace test
             this.standardControl8.BlinkColor = System.Drawing.Color.Red;
             this.standardControl8.Category = "1PIPE.cat2";
             this.standardControl8.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl8.DebugData"));
-            this.standardControl8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl8.FillColor = System.Drawing.Color.Lime;
+            this.standardControl8.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl8.Location = new System.Drawing.Point(623, 627);
             this.standardControl8.Name = "standardControl8";
             this.standardControl8.Size = new System.Drawing.Size(31, 41);
@@ -1364,7 +1421,8 @@ namespace test
             this.standardControl10.BlinkColor = System.Drawing.Color.Red;
             this.standardControl10.Category = "1PIPE.cat2";
             this.standardControl10.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl10.DebugData"));
-            this.standardControl10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl10.FillColor = System.Drawing.Color.Lime;
+            this.standardControl10.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl10.Location = new System.Drawing.Point(623, 553);
             this.standardControl10.Name = "standardControl10";
             this.standardControl10.Size = new System.Drawing.Size(31, 41);
@@ -1429,7 +1487,8 @@ namespace test
             this.standardControl20.BlinkColor = System.Drawing.Color.Red;
             this.standardControl20.Category = "1PIPE.cat2";
             this.standardControl20.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl20.DebugData"));
-            this.standardControl20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl20.FillColor = System.Drawing.Color.Lime;
+            this.standardControl20.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl20.Location = new System.Drawing.Point(1322, 204);
             this.standardControl20.Name = "standardControl20";
             this.standardControl20.Size = new System.Drawing.Size(41, 12);
@@ -1452,7 +1511,8 @@ namespace test
             this.standardControl27.BlinkColor = System.Drawing.Color.Red;
             this.standardControl27.Category = "1PIPE.cat2";
             this.standardControl27.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl27.DebugData"));
-            this.standardControl27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl27.FillColor = System.Drawing.Color.Blue;
+            this.standardControl27.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl27.Location = new System.Drawing.Point(828, 341);
             this.standardControl27.Name = "standardControl27";
             this.standardControl27.Size = new System.Drawing.Size(31, 41);
@@ -1495,7 +1555,8 @@ namespace test
             this.standardControl29.BlinkColor = System.Drawing.Color.Red;
             this.standardControl29.Category = "1PIPE.cat2";
             this.standardControl29.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl29.DebugData"));
-            this.standardControl29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl29.FillColor = System.Drawing.Color.Blue;
+            this.standardControl29.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl29.Location = new System.Drawing.Point(828, 267);
             this.standardControl29.Name = "standardControl29";
             this.standardControl29.Size = new System.Drawing.Size(31, 41);
@@ -1518,7 +1579,8 @@ namespace test
             this.standardControl30.BlinkColor = System.Drawing.Color.Red;
             this.standardControl30.Category = "1PIPE.cat2";
             this.standardControl30.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl30.DebugData"));
-            this.standardControl30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl30.FillColor = System.Drawing.Color.Blue;
+            this.standardControl30.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl30.Location = new System.Drawing.Point(623, 341);
             this.standardControl30.Name = "standardControl30";
             this.standardControl30.Size = new System.Drawing.Size(31, 41);
@@ -1561,7 +1623,8 @@ namespace test
             this.standardControl55.BlinkColor = System.Drawing.Color.Red;
             this.standardControl55.Category = "1PIPE.cat2";
             this.standardControl55.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl55.DebugData"));
-            this.standardControl55.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl55.FillColor = System.Drawing.Color.Blue;
+            this.standardControl55.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl55.Location = new System.Drawing.Point(623, 267);
             this.standardControl55.Name = "standardControl55";
             this.standardControl55.Size = new System.Drawing.Size(31, 41);
@@ -1584,7 +1647,8 @@ namespace test
             this.standardControl56.BlinkColor = System.Drawing.Color.Red;
             this.standardControl56.Category = "1PIPE.cat2";
             this.standardControl56.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl56.DebugData"));
-            this.standardControl56.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl56.FillColor = System.Drawing.Color.Blue;
+            this.standardControl56.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl56.Location = new System.Drawing.Point(416, 341);
             this.standardControl56.Name = "standardControl56";
             this.standardControl56.Size = new System.Drawing.Size(31, 41);
@@ -1627,7 +1691,8 @@ namespace test
             this.standardControl58.BlinkColor = System.Drawing.Color.Red;
             this.standardControl58.Category = "1PIPE.cat2";
             this.standardControl58.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl58.DebugData"));
-            this.standardControl58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl58.FillColor = System.Drawing.Color.Blue;
+            this.standardControl58.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl58.Location = new System.Drawing.Point(416, 267);
             this.standardControl58.Name = "standardControl58";
             this.standardControl58.Size = new System.Drawing.Size(31, 41);
@@ -1648,7 +1713,7 @@ namespace test
             this.recoveryPump.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("recoveryPump.DebugData"));
             this.recoveryPump.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.recoveryPump.Flip = SymbolFactoryNetEngine.FlipOptions.Horizontal;
-            this.recoveryPump.Location = new System.Drawing.Point(919, 252);
+            this.recoveryPump.Location = new System.Drawing.Point(1051, 205);
             this.recoveryPump.Name = "recoveryPump";
             this.recoveryPump.Size = new System.Drawing.Size(58, 53);
             this.recoveryPump.SymbolHandle = ((long)(26978524));
@@ -1670,7 +1735,8 @@ namespace test
             this.standardControl60.BlinkColor = System.Drawing.Color.Red;
             this.standardControl60.Category = "1PIPE.cat2";
             this.standardControl60.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl60.DebugData"));
-            this.standardControl60.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl60.FillColor = System.Drawing.Color.Blue;
+            this.standardControl60.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl60.Location = new System.Drawing.Point(809, 258);
             this.standardControl60.Name = "standardControl60";
             this.standardControl60.Size = new System.Drawing.Size(155, 10);
@@ -1693,7 +1759,8 @@ namespace test
             this.standardControl61.BlinkColor = System.Drawing.Color.Red;
             this.standardControl61.Category = "1PIPE.cat2";
             this.standardControl61.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl61.DebugData"));
-            this.standardControl61.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl61.FillColor = System.Drawing.Color.Blue;
+            this.standardControl61.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl61.Location = new System.Drawing.Point(660, 258);
             this.standardControl61.Name = "standardControl61";
             this.standardControl61.Size = new System.Drawing.Size(155, 10);
@@ -1716,7 +1783,8 @@ namespace test
             this.standardControl62.BlinkColor = System.Drawing.Color.Red;
             this.standardControl62.Category = "1PIPE.cat2";
             this.standardControl62.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl62.DebugData"));
-            this.standardControl62.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl62.FillColor = System.Drawing.Color.Blue;
+            this.standardControl62.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl62.Location = new System.Drawing.Point(511, 258);
             this.standardControl62.Name = "standardControl62";
             this.standardControl62.Size = new System.Drawing.Size(155, 10);
@@ -1739,7 +1807,8 @@ namespace test
             this.standardControl63.BlinkColor = System.Drawing.Color.Red;
             this.standardControl63.Category = "1PIPE.cat2";
             this.standardControl63.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl63.DebugData"));
-            this.standardControl63.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl63.FillColor = System.Drawing.Color.Blue;
+            this.standardControl63.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl63.Location = new System.Drawing.Point(360, 258);
             this.standardControl63.Name = "standardControl63";
             this.standardControl63.Size = new System.Drawing.Size(155, 10);
@@ -1781,7 +1850,8 @@ namespace test
             this.standardControl65.BlinkColor = System.Drawing.Color.Red;
             this.standardControl65.Category = "1PIPE.cat2";
             this.standardControl65.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl65.DebugData"));
-            this.standardControl65.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl65.FillColor = System.Drawing.Color.Blue;
+            this.standardControl65.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl65.Location = new System.Drawing.Point(292, 257);
             this.standardControl65.Name = "standardControl65";
             this.standardControl65.Size = new System.Drawing.Size(41, 11);
@@ -1804,7 +1874,8 @@ namespace test
             this.standardControl66.BlinkColor = System.Drawing.Color.Red;
             this.standardControl66.Category = "1PIPE.cat2";
             this.standardControl66.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl66.DebugData"));
-            this.standardControl66.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl66.FillColor = System.Drawing.Color.Blue;
+            this.standardControl66.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl66.Location = new System.Drawing.Point(276, 258);
             this.standardControl66.Name = "standardControl66";
             this.standardControl66.Size = new System.Drawing.Size(22, 19);
@@ -1827,7 +1898,8 @@ namespace test
             this.standardControl67.BlinkColor = System.Drawing.Color.Red;
             this.standardControl67.Category = "1PIPE.cat2";
             this.standardControl67.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl67.DebugData"));
-            this.standardControl67.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl67.FillColor = System.Drawing.Color.Blue;
+            this.standardControl67.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl67.Location = new System.Drawing.Point(277, 277);
             this.standardControl67.Name = "standardControl67";
             this.standardControl67.Size = new System.Drawing.Size(12, 162);
@@ -1850,7 +1922,8 @@ namespace test
             this.standardControl68.BlinkColor = System.Drawing.Color.Red;
             this.standardControl68.Category = "1PIPE.cat2";
             this.standardControl68.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl68.DebugData"));
-            this.standardControl68.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl68.FillColor = System.Drawing.Color.Blue;
+            this.standardControl68.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl68.Location = new System.Drawing.Point(277, 439);
             this.standardControl68.Name = "standardControl68";
             this.standardControl68.Size = new System.Drawing.Size(12, 162);
@@ -1873,7 +1946,8 @@ namespace test
             this.standardControl70.BlinkColor = System.Drawing.Color.Red;
             this.standardControl70.Category = "1PIPE.cat2";
             this.standardControl70.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl70.DebugData"));
-            this.standardControl70.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl70.FillColor = System.Drawing.Color.Blue;
+            this.standardControl70.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl70.Location = new System.Drawing.Point(382, 553);
             this.standardControl70.Name = "standardControl70";
             this.standardControl70.Size = new System.Drawing.Size(12, 162);
@@ -1896,7 +1970,8 @@ namespace test
             this.standardControl71.BlinkColor = System.Drawing.Color.Red;
             this.standardControl71.Category = "1PIPE.cat2";
             this.standardControl71.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl71.DebugData"));
-            this.standardControl71.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl71.FillColor = System.Drawing.Color.Blue;
+            this.standardControl71.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl71.Location = new System.Drawing.Point(588, 553);
             this.standardControl71.Name = "standardControl71";
             this.standardControl71.Size = new System.Drawing.Size(12, 162);
@@ -1919,7 +1994,8 @@ namespace test
             this.standardControl72.BlinkColor = System.Drawing.Color.Red;
             this.standardControl72.Category = "1PIPE.cat2";
             this.standardControl72.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl72.DebugData"));
-            this.standardControl72.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl72.FillColor = System.Drawing.Color.Blue;
+            this.standardControl72.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl72.Location = new System.Drawing.Point(794, 553);
             this.standardControl72.Name = "standardControl72";
             this.standardControl72.Size = new System.Drawing.Size(12, 162);
@@ -1942,7 +2018,8 @@ namespace test
             this.standardControl73.BlinkColor = System.Drawing.Color.Red;
             this.standardControl73.Category = "1PIPE.cat2";
             this.standardControl73.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl73.DebugData"));
-            this.standardControl73.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl73.FillColor = System.Drawing.Color.Blue;
+            this.standardControl73.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl73.Location = new System.Drawing.Point(1000, 553);
             this.standardControl73.Name = "standardControl73";
             this.standardControl73.Size = new System.Drawing.Size(12, 162);
@@ -1965,7 +2042,8 @@ namespace test
             this.standardControl69.BlinkColor = System.Drawing.Color.Red;
             this.standardControl69.Category = "1PIPE.cat2";
             this.standardControl69.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl69.DebugData"));
-            this.standardControl69.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl69.FillColor = System.Drawing.Color.Blue;
+            this.standardControl69.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl69.Location = new System.Drawing.Point(277, 593);
             this.standardControl69.Name = "standardControl69";
             this.standardControl69.Size = new System.Drawing.Size(12, 162);
@@ -1988,7 +2066,8 @@ namespace test
             this.standardControl74.BlinkColor = System.Drawing.Color.Red;
             this.standardControl74.Category = "1PIPE.cat2";
             this.standardControl74.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl74.DebugData"));
-            this.standardControl74.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl74.FillColor = System.Drawing.Color.Blue;
+            this.standardControl74.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl74.Location = new System.Drawing.Point(372, 714);
             this.standardControl74.Name = "standardControl74";
             this.standardControl74.Size = new System.Drawing.Size(31, 41);
@@ -2011,7 +2090,8 @@ namespace test
             this.standardControl75.BlinkColor = System.Drawing.Color.Red;
             this.standardControl75.Category = "1PIPE.cat2";
             this.standardControl75.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl75.DebugData"));
-            this.standardControl75.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl75.FillColor = System.Drawing.Color.Blue;
+            this.standardControl75.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl75.Location = new System.Drawing.Point(578, 714);
             this.standardControl75.Name = "standardControl75";
             this.standardControl75.Size = new System.Drawing.Size(31, 41);
@@ -2034,7 +2114,8 @@ namespace test
             this.standardControl76.BlinkColor = System.Drawing.Color.Red;
             this.standardControl76.Category = "1PIPE.cat2";
             this.standardControl76.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl76.DebugData"));
-            this.standardControl76.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl76.FillColor = System.Drawing.Color.Blue;
+            this.standardControl76.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl76.Location = new System.Drawing.Point(784, 714);
             this.standardControl76.Name = "standardControl76";
             this.standardControl76.Size = new System.Drawing.Size(31, 41);
@@ -2057,7 +2138,8 @@ namespace test
             this.standardControl77.BlinkColor = System.Drawing.Color.Red;
             this.standardControl77.Category = "1PIPE.cat2";
             this.standardControl77.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl77.DebugData"));
-            this.standardControl77.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl77.FillColor = System.Drawing.Color.Blue;
+            this.standardControl77.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl77.Location = new System.Drawing.Point(990, 714);
             this.standardControl77.Name = "standardControl77";
             this.standardControl77.Size = new System.Drawing.Size(31, 41);
@@ -2150,7 +2232,7 @@ namespace test
             this.standardControl81.Category = "1VLV.cat2";
             this.standardControl81.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl81.DebugData"));
             this.standardControl81.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl81.Location = new System.Drawing.Point(996, 706);
+            this.standardControl81.Location = new System.Drawing.Point(995, 706);
             this.standardControl81.Name = "standardControl81";
             this.standardControl81.Size = new System.Drawing.Size(31, 41);
             this.standardControl81.SymbolHandle = ((long)(1063372356));
@@ -2172,7 +2254,8 @@ namespace test
             this.standardControl82.BlinkColor = System.Drawing.Color.Red;
             this.standardControl82.Category = "1PIPE.cat2";
             this.standardControl82.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl82.DebugData"));
-            this.standardControl82.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl82.FillColor = System.Drawing.Color.Blue;
+            this.standardControl82.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl82.Location = new System.Drawing.Point(276, 753);
             this.standardControl82.Name = "standardControl82";
             this.standardControl82.Size = new System.Drawing.Size(154, 10);
@@ -2195,7 +2278,8 @@ namespace test
             this.standardControl83.BlinkColor = System.Drawing.Color.Red;
             this.standardControl83.Category = "1PIPE.cat2";
             this.standardControl83.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl83.DebugData"));
-            this.standardControl83.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl83.FillColor = System.Drawing.Color.Blue;
+            this.standardControl83.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl83.Location = new System.Drawing.Point(423, 753);
             this.standardControl83.Name = "standardControl83";
             this.standardControl83.Size = new System.Drawing.Size(154, 10);
@@ -2218,7 +2302,8 @@ namespace test
             this.standardControl84.BlinkColor = System.Drawing.Color.Red;
             this.standardControl84.Category = "1PIPE.cat2";
             this.standardControl84.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl84.DebugData"));
-            this.standardControl84.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl84.FillColor = System.Drawing.Color.Blue;
+            this.standardControl84.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl84.Location = new System.Drawing.Point(574, 753);
             this.standardControl84.Name = "standardControl84";
             this.standardControl84.Size = new System.Drawing.Size(154, 10);
@@ -2241,7 +2326,8 @@ namespace test
             this.standardControl85.BlinkColor = System.Drawing.Color.Red;
             this.standardControl85.Category = "1PIPE.cat2";
             this.standardControl85.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl85.DebugData"));
-            this.standardControl85.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl85.FillColor = System.Drawing.Color.Blue;
+            this.standardControl85.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl85.Location = new System.Drawing.Point(722, 753);
             this.standardControl85.Name = "standardControl85";
             this.standardControl85.Size = new System.Drawing.Size(154, 10);
@@ -2264,7 +2350,8 @@ namespace test
             this.standardControl86.BlinkColor = System.Drawing.Color.Red;
             this.standardControl86.Category = "1PIPE.cat2";
             this.standardControl86.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl86.DebugData"));
-            this.standardControl86.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl86.FillColor = System.Drawing.Color.Blue;
+            this.standardControl86.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl86.Location = new System.Drawing.Point(845, 753);
             this.standardControl86.Name = "standardControl86";
             this.standardControl86.Size = new System.Drawing.Size(154, 10);
@@ -2287,7 +2374,8 @@ namespace test
             this.standardControl87.BlinkColor = System.Drawing.Color.Red;
             this.standardControl87.Category = "1PIPE.cat2";
             this.standardControl87.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl87.DebugData"));
-            this.standardControl87.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl87.FillColor = System.Drawing.Color.Blue;
+            this.standardControl87.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl87.Location = new System.Drawing.Point(990, 744);
             this.standardControl87.Name = "standardControl87";
             this.standardControl87.Size = new System.Drawing.Size(22, 19);
@@ -2310,7 +2398,8 @@ namespace test
             this.standardControl88.BlinkColor = System.Drawing.Color.Red;
             this.standardControl88.Category = "1PIPE.cat2";
             this.standardControl88.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl88.DebugData"));
-            this.standardControl88.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl88.FillColor = System.Drawing.Color.Blue;
+            this.standardControl88.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl88.Location = new System.Drawing.Point(237, 750);
             this.standardControl88.Name = "standardControl88";
             this.standardControl88.Size = new System.Drawing.Size(41, 16);
@@ -2425,7 +2514,8 @@ namespace test
             this.standardControl59.BlinkColor = System.Drawing.Color.Red;
             this.standardControl59.Category = "1PIPE.cat2";
             this.standardControl59.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl59.DebugData"));
-            this.standardControl59.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl59.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl59.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl59.Location = new System.Drawing.Point(816, 220);
             this.standardControl59.Name = "standardControl59";
             this.standardControl59.Size = new System.Drawing.Size(12, 162);
@@ -2449,6 +2539,7 @@ namespace test
             this.standardControl93.Category = "1PIPE.cat2";
             this.standardControl93.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl93.DebugData"));
             this.standardControl93.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl93.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl93.Location = new System.Drawing.Point(610, 220);
             this.standardControl93.Name = "standardControl93";
             this.standardControl93.Size = new System.Drawing.Size(12, 162);
@@ -2547,7 +2638,7 @@ namespace test
             // 
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(1359, 189);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
@@ -2561,7 +2652,7 @@ namespace test
             // 
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(1359, 239);
             this.label4.Margin = new System.Windows.Forms.Padding(3);
@@ -2575,7 +2666,7 @@ namespace test
             // 
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(1359, 289);
             this.label5.Margin = new System.Windows.Forms.Padding(3);
@@ -2589,7 +2680,7 @@ namespace test
             // 
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(1359, 338);
             this.label6.Margin = new System.Windows.Forms.Padding(3);
@@ -2603,7 +2694,7 @@ namespace test
             // 
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(1359, 388);
             this.label7.Margin = new System.Windows.Forms.Padding(3);
@@ -2613,134 +2704,19 @@ namespace test
             this.label7.Text = "Tank lắng xoáy";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // standardControl97
-            // 
-            this.standardControl97.AnalogIntValue1 = ((short)(0));
-            this.standardControl97.AnalogValue1 = 0D;
-            this.standardControl97.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl97.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl97.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl97.Category = "1PIPE.cat2";
-            this.standardControl97.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl97.DebugData"));
-            this.standardControl97.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl97.Location = new System.Drawing.Point(976, 270);
-            this.standardControl97.Name = "standardControl97";
-            this.standardControl97.Size = new System.Drawing.Size(37, 10);
-            this.standardControl97.SymbolHandle = ((long)(2078383901));
-            this.standardControl97.TabIndex = 132;
-            // 
             // label8
             // 
             this.label8.BackColor = System.Drawing.Color.Blue;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1012, 250);
+            this.label8.Location = new System.Drawing.Point(1068, 134);
             this.label8.Margin = new System.Windows.Forms.Padding(3);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(182, 50);
             this.label8.TabIndex = 133;
             this.label8.Text = "Đường nước hồi";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // standardControl99
-            // 
-            this.standardControl99.AnalogIntValue1 = ((short)(0));
-            this.standardControl99.AnalogValue1 = 0D;
-            this.standardControl99.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl99.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl99.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl99.Category = "1PIPE.cat2";
-            this.standardControl99.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl99.DebugData"));
-            this.standardControl99.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl99.Location = new System.Drawing.Point(1051, 327);
-            this.standardControl99.Name = "standardControl99";
-            this.standardControl99.Size = new System.Drawing.Size(41, 12);
-            this.standardControl99.SymbolHandle = ((long)(2078383901));
-            this.standardControl99.TabIndex = 135;
-            // 
-            // standardControl100
-            // 
-            this.standardControl100.AnalogIntValue1 = ((short)(0));
-            this.standardControl100.AnalogValue1 = 0D;
-            this.standardControl100.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl100.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl100.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl100.Category = "1PIPE.cat2";
-            this.standardControl100.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl100.DebugData"));
-            this.standardControl100.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl100.Location = new System.Drawing.Point(1203, 327);
-            this.standardControl100.Name = "standardControl100";
-            this.standardControl100.Size = new System.Drawing.Size(41, 12);
-            this.standardControl100.SymbolHandle = ((long)(2078383901));
-            this.standardControl100.TabIndex = 136;
-            // 
-            // standardControl101
-            // 
-            this.standardControl101.AnalogIntValue1 = ((short)(0));
-            this.standardControl101.AnalogValue1 = 0D;
-            this.standardControl101.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl101.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl101.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl101.Category = "1PIPE.cat2";
-            this.standardControl101.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl101.DebugData"));
-            this.standardControl101.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl101.Location = new System.Drawing.Point(1033, 328);
-            this.standardControl101.Name = "standardControl101";
-            this.standardControl101.Size = new System.Drawing.Size(21, 19);
-            this.standardControl101.SymbolHandle = ((long)(630871749));
-            this.standardControl101.TabIndex = 137;
-            // 
-            // standardControl102
-            // 
-            this.standardControl102.AnalogIntValue1 = ((short)(0));
-            this.standardControl102.AnalogValue1 = 0D;
-            this.standardControl102.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl102.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl102.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl102.Category = "1PIPE.cat2";
-            this.standardControl102.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl102.DebugData"));
-            this.standardControl102.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl102.Location = new System.Drawing.Point(1023, 341);
-            this.standardControl102.Name = "standardControl102";
-            this.standardControl102.Size = new System.Drawing.Size(31, 41);
-            this.standardControl102.SymbolHandle = ((long)(1088408125));
-            this.standardControl102.TabIndex = 138;
             // 
             // standardControl98
             // 
@@ -2755,57 +2731,12 @@ namespace test
             this.standardControl98.Category = "1VLV.cat2";
             this.standardControl98.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl98.DebugData"));
             this.standardControl98.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl98.Location = new System.Drawing.Point(1173, 307);
+            this.standardControl98.Location = new System.Drawing.Point(1026, 308);
             this.standardControl98.Name = "standardControl98";
-            this.standardControl98.Size = new System.Drawing.Size(30, 33);
+            this.standardControl98.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate270;
+            this.standardControl98.Size = new System.Drawing.Size(44, 33);
             this.standardControl98.SymbolHandle = ((long)(427465044));
             this.standardControl98.TabIndex = 139;
-            // 
-            // standardControl103
-            // 
-            this.standardControl103.AnalogIntValue1 = ((short)(0));
-            this.standardControl103.AnalogValue1 = 0D;
-            this.standardControl103.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl103.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl103.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl103.Category = "1PIPE.cat2";
-            this.standardControl103.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl103.DebugData"));
-            this.standardControl103.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl103.Location = new System.Drawing.Point(1092, 327);
-            this.standardControl103.Name = "standardControl103";
-            this.standardControl103.Size = new System.Drawing.Size(41, 12);
-            this.standardControl103.SymbolHandle = ((long)(2078383901));
-            this.standardControl103.TabIndex = 140;
-            // 
-            // standardControl104
-            // 
-            this.standardControl104.AnalogIntValue1 = ((short)(0));
-            this.standardControl104.AnalogValue1 = 0D;
-            this.standardControl104.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl104.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl104.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl104.Category = "1PIPE.cat2";
-            this.standardControl104.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl104.DebugData"));
-            this.standardControl104.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl104.Location = new System.Drawing.Point(1133, 327);
-            this.standardControl104.Name = "standardControl104";
-            this.standardControl104.Size = new System.Drawing.Size(41, 12);
-            this.standardControl104.SymbolHandle = ((long)(2078383901));
-            this.standardControl104.TabIndex = 141;
             // 
             // standardControl105
             // 
@@ -2823,7 +2754,8 @@ namespace test
             this.standardControl105.BlinkColor = System.Drawing.Color.Red;
             this.standardControl105.Category = "1PIPE.cat2";
             this.standardControl105.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl105.DebugData"));
-            this.standardControl105.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl105.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl105.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl105.Location = new System.Drawing.Point(806, 182);
             this.standardControl105.Name = "standardControl105";
             this.standardControl105.Size = new System.Drawing.Size(31, 41);
@@ -2846,7 +2778,8 @@ namespace test
             this.standardControl106.BlinkColor = System.Drawing.Color.Red;
             this.standardControl106.Category = "1PIPE.cat2";
             this.standardControl106.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl106.DebugData"));
-            this.standardControl106.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl106.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl106.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl106.Location = new System.Drawing.Point(808, 144);
             this.standardControl106.Name = "standardControl106";
             this.standardControl106.Size = new System.Drawing.Size(19, 24);
@@ -2870,6 +2803,7 @@ namespace test
             this.standardControl107.Category = "1PIPE.cat2";
             this.standardControl107.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl107.DebugData"));
             this.standardControl107.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl107.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl107.Location = new System.Drawing.Point(602, 198);
             this.standardControl107.Name = "standardControl107";
             this.standardControl107.Size = new System.Drawing.Size(19, 24);
@@ -2892,7 +2826,8 @@ namespace test
             this.standardControl108.BlinkColor = System.Drawing.Color.Red;
             this.standardControl108.Category = "1PIPE.cat2";
             this.standardControl108.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl108.DebugData"));
-            this.standardControl108.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl108.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl108.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl108.Location = new System.Drawing.Point(655, 147);
             this.standardControl108.Name = "standardControl108";
             this.standardControl108.Size = new System.Drawing.Size(154, 10);
@@ -2915,7 +2850,8 @@ namespace test
             this.standardControl109.BlinkColor = System.Drawing.Color.Red;
             this.standardControl109.Category = "1PIPE.cat2";
             this.standardControl109.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl109.DebugData"));
-            this.standardControl109.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl109.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl109.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl109.Location = new System.Drawing.Point(504, 147);
             this.standardControl109.Name = "standardControl109";
             this.standardControl109.Size = new System.Drawing.Size(154, 10);
@@ -2957,7 +2893,8 @@ namespace test
             this.standardControl111.BlinkColor = System.Drawing.Color.Red;
             this.standardControl111.Category = "1PIPE.cat2";
             this.standardControl111.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl111.DebugData"));
-            this.standardControl111.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl111.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl111.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl111.Location = new System.Drawing.Point(806, 163);
             this.standardControl111.Name = "standardControl111";
             this.standardControl111.Size = new System.Drawing.Size(31, 41);
@@ -2980,7 +2917,8 @@ namespace test
             this.standardControl112.BlinkColor = System.Drawing.Color.Red;
             this.standardControl112.Category = "1PIPE.cat2";
             this.standardControl112.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl112.DebugData"));
-            this.standardControl112.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl112.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl112.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl112.Location = new System.Drawing.Point(291, 161);
             this.standardControl112.Name = "standardControl112";
             this.standardControl112.Size = new System.Drawing.Size(154, 10);
@@ -3004,6 +2942,7 @@ namespace test
             this.standardControl113.Category = "1PIPE.cat2";
             this.standardControl113.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl113.DebugData"));
             this.standardControl113.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl113.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl113.Location = new System.Drawing.Point(455, 201);
             this.standardControl113.Name = "standardControl113";
             this.standardControl113.Size = new System.Drawing.Size(154, 10);
@@ -3045,7 +2984,8 @@ namespace test
             this.standardControl115.BlinkColor = System.Drawing.Color.Red;
             this.standardControl115.Category = "1PIPE.cat2";
             this.standardControl115.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl115.DebugData"));
-            this.standardControl115.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl115.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl115.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl115.Location = new System.Drawing.Point(223, 137);
             this.standardControl115.Name = "standardControl115";
             this.standardControl115.Size = new System.Drawing.Size(41, 58);
@@ -3054,7 +2994,7 @@ namespace test
             // 
             // label9
             // 
-            this.label9.BackColor = System.Drawing.Color.Red;
+            this.label9.BackColor = System.Drawing.Color.DarkOrange;
             this.label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
@@ -3083,6 +3023,7 @@ namespace test
             this.standardControl116.Category = "1PIPE.cat2";
             this.standardControl116.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl116.DebugData"));
             this.standardControl116.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl116.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl116.Location = new System.Drawing.Point(306, 201);
             this.standardControl116.Name = "standardControl116";
             this.standardControl116.Size = new System.Drawing.Size(154, 10);
@@ -3129,6 +3070,7 @@ namespace test
             this.standardControl119.Category = "1PIPE.cat2";
             this.standardControl119.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl119.DebugData"));
             this.standardControl119.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl119.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl119.Location = new System.Drawing.Point(157, 201);
             this.standardControl119.Name = "standardControl119";
             this.standardControl119.Size = new System.Drawing.Size(154, 10);
@@ -3152,6 +3094,7 @@ namespace test
             this.standardControl120.Category = "1PIPE.cat2";
             this.standardControl120.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl120.DebugData"));
             this.standardControl120.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl120.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl120.Location = new System.Drawing.Point(118, 177);
             this.standardControl120.Name = "standardControl120";
             this.standardControl120.Size = new System.Drawing.Size(41, 58);
@@ -3175,6 +3118,7 @@ namespace test
             this.standardControl121.Category = "1PIPE.cat2";
             this.standardControl121.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl121.DebugData"));
             this.standardControl121.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl121.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl121.Location = new System.Drawing.Point(98, 201);
             this.standardControl121.Name = "standardControl121";
             this.standardControl121.Size = new System.Drawing.Size(21, 19);
@@ -3198,6 +3142,7 @@ namespace test
             this.standardControl122.Category = "1PIPE.cat2";
             this.standardControl122.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl122.DebugData"));
             this.standardControl122.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl122.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl122.Location = new System.Drawing.Point(88, 217);
             this.standardControl122.Name = "standardControl122";
             this.standardControl122.Size = new System.Drawing.Size(31, 41);
@@ -3260,6 +3205,7 @@ namespace test
             this.standardControl125.Category = "1PIPE.cat2";
             this.standardControl125.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl125.DebugData"));
             this.standardControl125.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl125.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl125.Location = new System.Drawing.Point(74, 347);
             this.standardControl125.Name = "standardControl125";
             this.standardControl125.Size = new System.Drawing.Size(31, 41);
@@ -3283,6 +3229,7 @@ namespace test
             this.standardControl126.Category = "1PIPE.cat2";
             this.standardControl126.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl126.DebugData"));
             this.standardControl126.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl126.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl126.Location = new System.Drawing.Point(73, 420);
             this.standardControl126.Name = "standardControl126";
             this.standardControl126.Size = new System.Drawing.Size(31, 41);
@@ -3325,6 +3272,7 @@ namespace test
             this.standardControl127.Category = "1PIPE.cat2";
             this.standardControl127.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl127.DebugData"));
             this.standardControl127.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl127.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl127.Location = new System.Drawing.Point(187, 347);
             this.standardControl127.Name = "standardControl127";
             this.standardControl127.Size = new System.Drawing.Size(31, 41);
@@ -3391,6 +3339,7 @@ namespace test
             this.standardControl130.Category = "1PIPE.cat2";
             this.standardControl130.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl130.DebugData"));
             this.standardControl130.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl130.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl130.Location = new System.Drawing.Point(186, 420);
             this.standardControl130.Name = "standardControl130";
             this.standardControl130.Size = new System.Drawing.Size(31, 41);
@@ -3414,6 +3363,7 @@ namespace test
             this.standardControl131.Category = "1PIPE.cat2";
             this.standardControl131.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl131.DebugData"));
             this.standardControl131.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl131.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl131.Location = new System.Drawing.Point(88, 257);
             this.standardControl131.Name = "standardControl131";
             this.standardControl131.Size = new System.Drawing.Size(31, 41);
@@ -3437,6 +3387,7 @@ namespace test
             this.standardControl132.Category = "1PIPE.cat2";
             this.standardControl132.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl132.DebugData"));
             this.standardControl132.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl132.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl132.Location = new System.Drawing.Point(88, 298);
             this.standardControl132.Name = "standardControl132";
             this.standardControl132.Size = new System.Drawing.Size(31, 41);
@@ -3460,6 +3411,7 @@ namespace test
             this.standardControl133.Category = "1PIPE.cat2";
             this.standardControl133.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl133.DebugData"));
             this.standardControl133.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl133.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl133.Location = new System.Drawing.Point(211, 287);
             this.standardControl133.Name = "standardControl133";
             this.standardControl133.Size = new System.Drawing.Size(21, 19);
@@ -3483,6 +3435,7 @@ namespace test
             this.standardControl134.Category = "1PIPE.cat2";
             this.standardControl134.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl134.DebugData"));
             this.standardControl134.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl134.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl134.Location = new System.Drawing.Point(229, 287);
             this.standardControl134.Name = "standardControl134";
             this.standardControl134.Size = new System.Drawing.Size(155, 10);
@@ -3506,6 +3459,7 @@ namespace test
             this.standardControl135.Category = "1PIPE.cat2";
             this.standardControl135.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl135.DebugData"));
             this.standardControl135.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl135.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl135.Location = new System.Drawing.Point(382, 284);
             this.standardControl135.Name = "standardControl135";
             this.standardControl135.Size = new System.Drawing.Size(19, 24);
@@ -3529,6 +3483,7 @@ namespace test
             this.standardControl136.Category = "1PIPE.cat2";
             this.standardControl136.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl136.DebugData"));
             this.standardControl136.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl136.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl136.Location = new System.Drawing.Point(380, 304);
             this.standardControl136.Name = "standardControl136";
             this.standardControl136.Size = new System.Drawing.Size(31, 41);
@@ -3552,6 +3507,7 @@ namespace test
             this.standardControl137.Category = "1PIPE.cat2";
             this.standardControl137.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl137.DebugData"));
             this.standardControl137.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl137.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
             this.standardControl137.Location = new System.Drawing.Point(380, 340);
             this.standardControl137.Name = "standardControl137";
             this.standardControl137.Size = new System.Drawing.Size(31, 41);
@@ -3642,11 +3598,450 @@ namespace test
             this.label15.Text = "Bể hồi";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // standardControl17
+            // 
+            this.standardControl17.AnalogIntValue1 = ((short)(0));
+            this.standardControl17.AnalogValue1 = 0D;
+            this.standardControl17.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl17.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl17.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl17.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl17.Category = "1SENS.cat2";
+            this.standardControl17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl17.DebugData"));
+            this.standardControl17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl17.Location = new System.Drawing.Point(323, 522);
+            this.standardControl17.Name = "standardControl17";
+            this.standardControl17.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl17.Size = new System.Drawing.Size(43, 21);
+            this.standardControl17.SymbolHandle = ((long)(543236406));
+            this.standardControl17.TabIndex = 188;
+            // 
+            // standardControl48
+            // 
+            this.standardControl48.AnalogIntValue1 = ((short)(0));
+            this.standardControl48.AnalogValue1 = 0D;
+            this.standardControl48.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl48.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl48.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl48.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl48.Category = "1PIPE.cat2";
+            this.standardControl48.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl48.DebugData"));
+            this.standardControl48.FillColor = System.Drawing.Color.Blue;
+            this.standardControl48.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl48.Location = new System.Drawing.Point(1023, 267);
+            this.standardControl48.Name = "standardControl48";
+            this.standardControl48.Size = new System.Drawing.Size(31, 41);
+            this.standardControl48.SymbolHandle = ((long)(1088408125));
+            this.standardControl48.TabIndex = 192;
+            // 
+            // standardControl49
+            // 
+            this.standardControl49.AnalogIntValue1 = ((short)(0));
+            this.standardControl49.AnalogValue1 = 0D;
+            this.standardControl49.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl49.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl49.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl49.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl49.Category = "1PIPE.cat2";
+            this.standardControl49.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl49.DebugData"));
+            this.standardControl49.FillColor = System.Drawing.Color.Blue;
+            this.standardControl49.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl49.Location = new System.Drawing.Point(1022, 341);
+            this.standardControl49.Name = "standardControl49";
+            this.standardControl49.Size = new System.Drawing.Size(31, 41);
+            this.standardControl49.SymbolHandle = ((long)(1088408125));
+            this.standardControl49.TabIndex = 193;
+            // 
+            // standardControl96
+            // 
+            this.standardControl96.AnalogIntValue1 = ((short)(0));
+            this.standardControl96.AnalogValue1 = 0D;
+            this.standardControl96.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl96.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl96.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl96.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl96.Category = "1PIPE.cat2";
+            this.standardControl96.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl96.DebugData"));
+            this.standardControl96.FillColor = System.Drawing.Color.Blue;
+            this.standardControl96.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl96.Location = new System.Drawing.Point(883, 258);
+            this.standardControl96.Name = "standardControl96";
+            this.standardControl96.Size = new System.Drawing.Size(155, 10);
+            this.standardControl96.SymbolHandle = ((long)(823526416));
+            this.standardControl96.TabIndex = 194;
+            // 
+            // standardControl99
+            // 
+            this.standardControl99.AnalogIntValue1 = ((short)(0));
+            this.standardControl99.AnalogValue1 = 0D;
+            this.standardControl99.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl99.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl99.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl99.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl99.Category = "1PIPE.cat2";
+            this.standardControl99.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl99.DebugData"));
+            this.standardControl99.FillColor = System.Drawing.Color.Blue;
+            this.standardControl99.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl99.Location = new System.Drawing.Point(1033, 210);
+            this.standardControl99.Name = "standardControl99";
+            this.standardControl99.Size = new System.Drawing.Size(21, 19);
+            this.standardControl99.SymbolHandle = ((long)(630871749));
+            this.standardControl99.TabIndex = 195;
+            // 
+            // standardControl100
+            // 
+            this.standardControl100.AnalogIntValue1 = ((short)(0));
+            this.standardControl100.AnalogValue1 = 0D;
+            this.standardControl100.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl100.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl100.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl100.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl100.Category = "1PIPE.cat2";
+            this.standardControl100.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl100.DebugData"));
+            this.standardControl100.FillColor = System.Drawing.Color.Blue;
+            this.standardControl100.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl100.Location = new System.Drawing.Point(1023, 226);
+            this.standardControl100.Name = "standardControl100";
+            this.standardControl100.Size = new System.Drawing.Size(31, 41);
+            this.standardControl100.SymbolHandle = ((long)(1088408125));
+            this.standardControl100.TabIndex = 196;
+            // 
+            // standardControl97
+            // 
+            this.standardControl97.AnalogIntValue1 = ((short)(0));
+            this.standardControl97.AnalogValue1 = 0D;
+            this.standardControl97.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl97.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl97.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl97.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl97.Category = "1PIPE.cat2";
+            this.standardControl97.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl97.DebugData"));
+            this.standardControl97.FillColor = System.Drawing.Color.Blue;
+            this.standardControl97.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl97.Location = new System.Drawing.Point(1143, 183);
+            this.standardControl97.Name = "standardControl97";
+            this.standardControl97.Size = new System.Drawing.Size(31, 41);
+            this.standardControl97.SymbolHandle = ((long)(1088408125));
+            this.standardControl97.TabIndex = 197;
+            // 
+            // standardControl101
+            // 
+            this.standardControl101.AnalogIntValue1 = ((short)(0));
+            this.standardControl101.AnalogValue1 = 0D;
+            this.standardControl101.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl101.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl101.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl101.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl101.Category = "1PIPE.cat2";
+            this.standardControl101.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl101.DebugData"));
+            this.standardControl101.FillColor = System.Drawing.Color.Blue;
+            this.standardControl101.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl101.Location = new System.Drawing.Point(1106, 224);
+            this.standardControl101.Name = "standardControl101";
+            this.standardControl101.Size = new System.Drawing.Size(41, 11);
+            this.standardControl101.SymbolHandle = ((long)(2078383901));
+            this.standardControl101.TabIndex = 198;
+            // 
+            // standardControl102
+            // 
+            this.standardControl102.AnalogIntValue1 = ((short)(0));
+            this.standardControl102.AnalogValue1 = 0D;
+            this.standardControl102.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl102.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl102.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl102.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl102.Category = "1PIPE.cat2";
+            this.standardControl102.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl102.DebugData"));
+            this.standardControl102.FillColor = System.Drawing.Color.Blue;
+            this.standardControl102.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
+            this.standardControl102.Location = new System.Drawing.Point(1144, 216);
+            this.standardControl102.Name = "standardControl102";
+            this.standardControl102.Size = new System.Drawing.Size(21, 19);
+            this.standardControl102.SymbolHandle = ((long)(1762314528));
+            this.standardControl102.TabIndex = 199;
+            // 
+            // standardControl43
+            // 
+            this.standardControl43.AnalogIntValue1 = ((short)(0));
+            this.standardControl43.AnalogValue1 = 0D;
+            this.standardControl43.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl43.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl43.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl43.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl43.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl43.Category = "1SENS.cat2";
+            this.standardControl43.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl43.DebugData"));
+            this.standardControl43.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl43.Location = new System.Drawing.Point(529, 524);
+            this.standardControl43.Name = "standardControl43";
+            this.standardControl43.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl43.Size = new System.Drawing.Size(43, 21);
+            this.standardControl43.SymbolHandle = ((long)(543236406));
+            this.standardControl43.TabIndex = 200;
+            // 
+            // standardControl46
+            // 
+            this.standardControl46.AnalogIntValue1 = ((short)(0));
+            this.standardControl46.AnalogValue1 = 0D;
+            this.standardControl46.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl46.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl46.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl46.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl46.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl46.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl46.Category = "1SENS.cat2";
+            this.standardControl46.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl46.DebugData"));
+            this.standardControl46.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl46.Location = new System.Drawing.Point(735, 522);
+            this.standardControl46.Name = "standardControl46";
+            this.standardControl46.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl46.Size = new System.Drawing.Size(43, 21);
+            this.standardControl46.SymbolHandle = ((long)(543236406));
+            this.standardControl46.TabIndex = 201;
+            // 
+            // standardControl47
+            // 
+            this.standardControl47.AnalogIntValue1 = ((short)(0));
+            this.standardControl47.AnalogValue1 = 0D;
+            this.standardControl47.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl47.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl47.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl47.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl47.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl47.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl47.Category = "1SENS.cat2";
+            this.standardControl47.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl47.DebugData"));
+            this.standardControl47.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl47.Location = new System.Drawing.Point(941, 522);
+            this.standardControl47.Name = "standardControl47";
+            this.standardControl47.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl47.Size = new System.Drawing.Size(43, 21);
+            this.standardControl47.SymbolHandle = ((long)(543236406));
+            this.standardControl47.TabIndex = 202;
+            // 
+            // standardControl14
+            // 
+            this.standardControl14.AnalogIntValue1 = ((short)(0));
+            this.standardControl14.AnalogValue1 = 0D;
+            this.standardControl14.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl14.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl14.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl14.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl14.Category = "1SENS.cat2";
+            this.standardControl14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl14.DebugData"));
+            this.standardControl14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl14.Location = new System.Drawing.Point(323, 390);
+            this.standardControl14.Name = "standardControl14";
+            this.standardControl14.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl14.Size = new System.Drawing.Size(43, 21);
+            this.standardControl14.SymbolHandle = ((long)(543236406));
+            this.standardControl14.TabIndex = 203;
+            // 
+            // standardControl6
+            // 
+            this.standardControl6.AnalogIntValue1 = ((short)(0));
+            this.standardControl6.AnalogValue1 = 0D;
+            this.standardControl6.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl6.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl6.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl6.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl6.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl6.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl6.Category = "1SENS.cat2";
+            this.standardControl6.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl6.DebugData"));
+            this.standardControl6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl6.Location = new System.Drawing.Point(529, 392);
+            this.standardControl6.Name = "standardControl6";
+            this.standardControl6.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl6.Size = new System.Drawing.Size(43, 21);
+            this.standardControl6.SymbolHandle = ((long)(543236406));
+            this.standardControl6.TabIndex = 204;
+            // 
+            // standardControl9
+            // 
+            this.standardControl9.AnalogIntValue1 = ((short)(0));
+            this.standardControl9.AnalogValue1 = 0D;
+            this.standardControl9.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl9.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl9.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl9.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl9.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl9.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl9.Category = "1SENS.cat2";
+            this.standardControl9.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl9.DebugData"));
+            this.standardControl9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl9.Location = new System.Drawing.Point(735, 392);
+            this.standardControl9.Name = "standardControl9";
+            this.standardControl9.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl9.Size = new System.Drawing.Size(43, 21);
+            this.standardControl9.SymbolHandle = ((long)(543236406));
+            this.standardControl9.TabIndex = 205;
+            // 
+            // standardControl12
+            // 
+            this.standardControl12.AnalogIntValue1 = ((short)(0));
+            this.standardControl12.AnalogValue1 = 0D;
+            this.standardControl12.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl12.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl12.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl12.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl12.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl12.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl12.Category = "1SENS.cat2";
+            this.standardControl12.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl12.DebugData"));
+            this.standardControl12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl12.Location = new System.Drawing.Point(941, 392);
+            this.standardControl12.Name = "standardControl12";
+            this.standardControl12.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
+            this.standardControl12.Size = new System.Drawing.Size(43, 21);
+            this.standardControl12.SymbolHandle = ((long)(543236406));
+            this.standardControl12.TabIndex = 206;
+            // 
+            // standardControl103
+            // 
+            this.standardControl103.AnalogIntValue1 = ((short)(0));
+            this.standardControl103.AnalogValue1 = 0D;
+            this.standardControl103.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl103.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl103.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl103.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl103.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl103.Category = "1SENS.cat2";
+            this.standardControl103.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl103.DebugData"));
+            this.standardControl103.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl103.Location = new System.Drawing.Point(938, 410);
+            this.standardControl103.Name = "standardControl103";
+            this.standardControl103.Size = new System.Drawing.Size(25, 115);
+            this.standardControl103.SymbolHandle = ((long)(1891582731));
+            this.standardControl103.TabIndex = 207;
+            // 
+            // standardControl104
+            // 
+            this.standardControl104.AnalogIntValue1 = ((short)(0));
+            this.standardControl104.AnalogValue1 = 0D;
+            this.standardControl104.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl104.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl104.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl104.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl104.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl104.Category = "1SENS.cat2";
+            this.standardControl104.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl104.DebugData"));
+            this.standardControl104.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl104.Location = new System.Drawing.Point(732, 410);
+            this.standardControl104.Name = "standardControl104";
+            this.standardControl104.Size = new System.Drawing.Size(25, 115);
+            this.standardControl104.SymbolHandle = ((long)(1891582731));
+            this.standardControl104.TabIndex = 208;
+            // 
+            // standardControl110
+            // 
+            this.standardControl110.AnalogIntValue1 = ((short)(0));
+            this.standardControl110.AnalogValue1 = 0D;
+            this.standardControl110.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl110.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl110.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl110.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl110.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl110.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl110.Category = "1SENS.cat2";
+            this.standardControl110.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl110.DebugData"));
+            this.standardControl110.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl110.Location = new System.Drawing.Point(526, 411);
+            this.standardControl110.Name = "standardControl110";
+            this.standardControl110.Size = new System.Drawing.Size(25, 115);
+            this.standardControl110.SymbolHandle = ((long)(1891582731));
+            this.standardControl110.TabIndex = 209;
+            // 
+            // standardControl114
+            // 
+            this.standardControl114.AnalogIntValue1 = ((short)(0));
+            this.standardControl114.AnalogValue1 = 0D;
+            this.standardControl114.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.standardControl114.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl114.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl114.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl114.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.standardControl114.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl114.Category = "1SENS.cat2";
+            this.standardControl114.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl114.DebugData"));
+            this.standardControl114.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl114.Location = new System.Drawing.Point(320, 409);
+            this.standardControl114.Name = "standardControl114";
+            this.standardControl114.Size = new System.Drawing.Size(25, 115);
+            this.standardControl114.SymbolHandle = ((long)(1891582731));
+            this.standardControl114.TabIndex = 210;
+            // 
             // FormCIP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1582, 853);
+            this.Controls.Add(this.standardControl114);
+            this.Controls.Add(this.standardControl110);
+            this.Controls.Add(this.standardControl104);
+            this.Controls.Add(this.standardControl103);
+            this.Controls.Add(this.standardControl102);
+            this.Controls.Add(this.standardControl101);
+            this.Controls.Add(this.standardControl97);
+            this.Controls.Add(this.standardControl99);
+            this.Controls.Add(this.standardControl49);
+            this.Controls.Add(this.standardControl48);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
@@ -3684,15 +4079,8 @@ namespace test
             this.Controls.Add(this.standardControl107);
             this.Controls.Add(this.standardControl106);
             this.Controls.Add(this.standardControl105);
-            this.Controls.Add(this.standardControl104);
-            this.Controls.Add(this.standardControl103);
             this.Controls.Add(this.standardControl98);
-            this.Controls.Add(this.standardControl102);
-            this.Controls.Add(this.standardControl101);
-            this.Controls.Add(this.standardControl100);
-            this.Controls.Add(this.standardControl99);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.standardControl97);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -3802,6 +4190,17 @@ namespace test
             this.Controls.Add(this.standardControl132);
             this.Controls.Add(this.standardControl134);
             this.Controls.Add(this.standardControl94);
+            this.Controls.Add(this.standardControl96);
+            this.Controls.Add(this.standardControl100);
+            this.Controls.Add(this.standardControl17);
+            this.Controls.Add(this.standardControl43);
+            this.Controls.Add(this.standardControl46);
+            this.Controls.Add(this.standardControl47);
+            this.Controls.Add(this.standardControl14);
+            this.Controls.Add(this.standardControl6);
+            this.Controls.Add(this.standardControl9);
+            this.Controls.Add(this.standardControl12);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormCIP";
@@ -3904,14 +4303,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl93)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl94)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl95)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl97)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl99)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl100)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl101)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl102)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl98)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl104)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl105)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl106)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl107)).EndInit();
@@ -3945,6 +4337,26 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl135)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl136)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl137)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl96)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl99)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl100)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl97)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl101)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl102)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl104)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl110)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl114)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4058,15 +4470,8 @@ namespace test
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private SymbolFactoryDotNet.StandardControl standardControl97;
         private System.Windows.Forms.Label label8;
-        private SymbolFactoryDotNet.StandardControl standardControl99;
-        private SymbolFactoryDotNet.StandardControl standardControl100;
-        private SymbolFactoryDotNet.StandardControl standardControl101;
-        private SymbolFactoryDotNet.StandardControl standardControl102;
         private SymbolFactoryDotNet.StandardControl standardControl98;
-        private SymbolFactoryDotNet.StandardControl standardControl103;
-        private SymbolFactoryDotNet.StandardControl standardControl104;
         private SymbolFactoryDotNet.StandardControl standardControl105;
         private SymbolFactoryDotNet.StandardControl standardControl106;
         private SymbolFactoryDotNet.StandardControl standardControl107;
@@ -4107,5 +4512,25 @@ namespace test
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
+        private SymbolFactoryDotNet.StandardControl standardControl17;
+        private SymbolFactoryDotNet.StandardControl standardControl48;
+        private SymbolFactoryDotNet.StandardControl standardControl49;
+        private SymbolFactoryDotNet.StandardControl standardControl96;
+        private SymbolFactoryDotNet.StandardControl standardControl99;
+        private SymbolFactoryDotNet.StandardControl standardControl100;
+        private SymbolFactoryDotNet.StandardControl standardControl97;
+        private SymbolFactoryDotNet.StandardControl standardControl101;
+        private SymbolFactoryDotNet.StandardControl standardControl102;
+        private SymbolFactoryDotNet.StandardControl standardControl43;
+        private SymbolFactoryDotNet.StandardControl standardControl46;
+        private SymbolFactoryDotNet.StandardControl standardControl47;
+        private SymbolFactoryDotNet.StandardControl standardControl14;
+        private SymbolFactoryDotNet.StandardControl standardControl6;
+        private SymbolFactoryDotNet.StandardControl standardControl9;
+        private SymbolFactoryDotNet.StandardControl standardControl12;
+        private SymbolFactoryDotNet.StandardControl standardControl103;
+        private SymbolFactoryDotNet.StandardControl standardControl104;
+        private SymbolFactoryDotNet.StandardControl standardControl110;
+        private SymbolFactoryDotNet.StandardControl standardControl114;
     }
 }

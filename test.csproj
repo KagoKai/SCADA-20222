@@ -52,16 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\TaiKhoan.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForms\FormCIP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCIP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCIP.Designer.cs">
+    <Compile Include="MainForms\FormCIP.Designer.cs">
       <DependentUpon>FormCIP.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
@@ -76,12 +70,39 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainForms\FormTankGao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormTankGao.designer.cs">
+      <DependentUpon>FormTankGao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormTankHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormTankHoa.designer.cs">
+      <DependentUpon>FormTankHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormTankLoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormTankLoc.designer.cs">
+      <DependentUpon>FormTankLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormTankMalt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormTankMalt.designer.cs">
+      <DependentUpon>FormTankMalt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCIP.resx">
+    <Compile Include="SubForms\ValveConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\ValveConfig.Designer.cs">
+      <DependentUpon>ValveConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainForms\FormCIP.resx">
       <DependentUpon>FormCIP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
@@ -89,6 +110,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormTankGao.resx">
+      <DependentUpon>FormTankGao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormTankHoa.resx">
+      <DependentUpon>FormTankHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormTankLoc.resx">
+      <DependentUpon>FormTankLoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormTankMalt.resx">
+      <DependentUpon>FormTankMalt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -99,6 +132,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SubForms\ValveConfig.resx">
+      <DependentUpon>ValveConfig.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,8 +148,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SubForms\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

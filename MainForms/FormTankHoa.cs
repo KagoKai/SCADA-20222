@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace test
 {
-    public partial class Form1 : Form
+    public partial class Noi_hoa : Form
     {
-        public Form1()
+        public Noi_hoa()
         {
             InitializeComponent();
         }
 
-        private void standardControl1_Load(object sender, EventArgs e)
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

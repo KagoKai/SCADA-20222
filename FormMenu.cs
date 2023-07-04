@@ -44,5 +44,11 @@ namespace test
             FormCIP cip = new FormCIP();
             cip.ShowDialog();
         }
+
+        private void buttonGao_Click(object sender, EventArgs e)
+        {
+            Noi_gao gao = new Noi_gao();
+            gao.ShowDialog();
+        }
     }
 }

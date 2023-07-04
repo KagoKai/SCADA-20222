@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using test.SubForms;
 
 namespace test
 {
@@ -27,7 +28,8 @@ namespace test
         }
         private void valve_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ValveConfig valve = new ValveConfig();
+            valve.ShowDialog();
         }
     }
 }
