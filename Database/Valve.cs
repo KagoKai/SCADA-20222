@@ -9,18 +9,18 @@ namespace test.Database
     public class Valve
     {
         private string _name;
-        private bool _state;
+        private string _state;
         public string Name
         {
             get => _name;
             set => _name = value;
         }
-        public bool State
+        public string State
         {
             get => _state;
             set => _state = value;
         }
-        public Valve(string name, bool state)
+        public Valve(string name, string state)
         {
             Name = name;
             State = state;

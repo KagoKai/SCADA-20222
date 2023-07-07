@@ -29,23 +29,24 @@ namespace test.SubForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.onButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.offButton = new System.Windows.Forms.Button();
             this.valveState = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.valveName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // onButton
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(55, 128);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bật";
-            this.button1.UseVisualStyleBackColor = true;
+            this.onButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.onButton.Location = new System.Drawing.Point(55, 128);
+            this.onButton.Name = "onButton";
+            this.onButton.Size = new System.Drawing.Size(90, 44);
+            this.onButton.TabIndex = 0;
+            this.onButton.Text = "Bật";
+            this.onButton.UseVisualStyleBackColor = true;
+            this.onButton.Click += new System.EventHandler(this.onButton_Click);
             // 
             // label1
             // 
@@ -57,23 +58,24 @@ namespace test.SubForms
             this.label1.TabIndex = 2;
             this.label1.Text = "Trạng thái van:";
             // 
-            // button2
+            // offButton
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(231, 128);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 44);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Tắt";
-            this.button2.UseVisualStyleBackColor = true;
+            this.offButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.offButton.Location = new System.Drawing.Point(241, 128);
+            this.offButton.Name = "offButton";
+            this.offButton.Size = new System.Drawing.Size(90, 44);
+            this.offButton.TabIndex = 3;
+            this.offButton.Text = "Tắt";
+            this.offButton.UseVisualStyleBackColor = true;
+            this.offButton.Click += new System.EventHandler(this.offButton_Click);
             // 
             // valveState
             // 
             this.valveState.AutoSize = true;
-            this.valveState.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valveState.Location = new System.Drawing.Point(267, 81);
+            this.valveState.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valveState.Location = new System.Drawing.Point(267, 78);
             this.valveState.Name = "valveState";
-            this.valveState.Size = new System.Drawing.Size(64, 28);
+            this.valveState.Size = new System.Drawing.Size(82, 32);
             this.valveState.TabIndex = 5;
             this.valveState.Text = "STATE";
             this.valveState.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,10 +93,11 @@ namespace test.SubForms
             // valveName
             // 
             this.valveName.AutoSize = true;
-            this.valveName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valveName.Location = new System.Drawing.Point(267, 31);
+            this.valveName.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valveName.ForeColor = System.Drawing.Color.Blue;
+            this.valveName.Location = new System.Drawing.Point(267, 28);
             this.valveName.Name = "valveName";
-            this.valveName.Size = new System.Drawing.Size(68, 28);
+            this.valveName.Size = new System.Drawing.Size(87, 32);
             this.valveName.TabIndex = 7;
             this.valveName.Text = "NAME";
             this.valveName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -107,9 +110,9 @@ namespace test.SubForms
             this.Controls.Add(this.valveName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.valveState);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.offButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.onButton);
             this.Name = "ValveConfig";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điều khiển Van";
@@ -121,9 +124,9 @@ namespace test.SubForms
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button onButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button offButton;
         private System.Windows.Forms.Label valveState;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label valveName;

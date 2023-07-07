@@ -140,6 +140,9 @@
     <EmbeddedResource Include="SubForms\ValveConfig.resx">
       <DependentUpon>ValveConfig.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\test.Database.Pump.datasource" />
+    <None Include="Properties\DataSources\test.Database.TaiKhoan.datasource" />
+    <None Include="Properties\DataSources\test.Database.Valve.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -154,7 +157,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
