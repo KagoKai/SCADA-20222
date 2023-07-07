@@ -51,7 +51,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\Pump.cs" />
     <Compile Include="Database\TaiKhoan.cs" />
+    <Compile Include="Database\Valve.cs" />
     <Compile Include="MainForms\FormCIP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +95,9 @@
     </Compile>
     <Compile Include="MainForms\FormTankMalt.designer.cs">
       <DependentUpon>FormTankMalt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\ScadaUI.cs">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,6 +153,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,7 +25,7 @@ namespace test.Database
             get => _quyenTruyCap;
             set => _quyenTruyCap = value;
         }
-        public TaiKhoan(string tenTaiKhoan, string matKhau, bool quyenTruyCap)
+        public TaiKhoan(string tenTaiKhoan="", string matKhau="", bool quyenTruyCap=false)
         {
             this.TenTaiKhoan = tenTaiKhoan;
             this.MatKhau = matKhau;

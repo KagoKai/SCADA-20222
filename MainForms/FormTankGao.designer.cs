@@ -233,6 +233,7 @@ namespace test
             this.V13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
             this.V13.BlinkColor = System.Drawing.Color.Red;
             this.V13.Category = "1VLV.cat2";
+            this.V13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.V13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V13.DebugData"));
             this.V13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.V13.Location = new System.Drawing.Point(485, 160);
@@ -379,7 +380,6 @@ namespace test
             this.returnButton.TabIndex = 74;
             this.returnButton.Text = "Quay lại";
             this.returnButton.UseVisualStyleBackColor = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // label3
             // 
@@ -729,6 +729,7 @@ namespace test
             this.V14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
             this.V14.BlinkColor = System.Drawing.Color.Red;
             this.V14.Category = "1VLV.cat2";
+            this.V14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.V14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V14.DebugData"));
             this.V14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.V14.Location = new System.Drawing.Point(849, 499);
@@ -749,6 +750,7 @@ namespace test
             this.V17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
             this.V17.BlinkColor = System.Drawing.Color.Red;
             this.V17.Category = "1VLV.cat2";
+            this.V17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.V17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V17.DebugData"));
             this.V17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.V17.Location = new System.Drawing.Point(849, 581);

@@ -43,7 +43,7 @@ namespace test
             this.username.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.Location = new System.Drawing.Point(67, 87);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(180, 32);
+            this.username.Size = new System.Drawing.Size(141, 25);
             this.username.TabIndex = 0;
             this.username.Text = "Tên đăng nhập:";
             // 
@@ -53,7 +53,7 @@ namespace test
             this.password.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.Location = new System.Drawing.Point(128, 132);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(121, 32);
+            this.password.Size = new System.Drawing.Size(95, 25);
             this.password.TabIndex = 1;
             this.password.Text = "Mật khẩu:";
             // 
@@ -87,7 +87,7 @@ namespace test
             this.txtUsername.Location = new System.Drawing.Point(265, 86);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(220, 30);
+            this.txtUsername.Size = new System.Drawing.Size(220, 26);
             this.txtUsername.TabIndex = 4;
             // 
             // txtPassword
@@ -97,25 +97,26 @@ namespace test
             this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(220, 30);
+            this.txtPassword.Size = new System.Drawing.Size(220, 26);
             this.txtPassword.TabIndex = 5;
             // 
             // title
             // 
             this.title.AutoSize = true;
             this.title.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.title.Location = new System.Drawing.Point(93, 23);
+            this.title.Location = new System.Drawing.Point(137, 32);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(384, 41);
+            this.title.Size = new System.Drawing.Size(312, 32);
             this.title.TabIndex = 6;
             this.title.Text = "Hệ thống CIP nhà máy bia";
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AcceptButton = this.loginButton;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(593, 293);
+            this.ClientSize = new System.Drawing.Size(584, 281);
             this.Controls.Add(this.title);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
@@ -125,6 +126,8 @@ namespace test
             this.Controls.Add(this.username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";

@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using test.Database;
 
 namespace test
 {
     public partial class FormLogin : Form
     {
-        private string _username = null;
-        private string _password = null;
-        private bool? _admin = null;
+        private TaiKhoan _taikhoan = new TaiKhoan();
 
         SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-T3Q5P887\WINCC;Initial Catalog=SCADA;Integrated Security=True");
 
@@ -46,9 +45,9 @@ namespace test
                     {
                         // Lấy thông tin từ tài khoản đầu tiên đúng thông tin đăng nhập
                         DataRow row = dtable.Rows[0];
-                        _username = row["username"].ToString();
-                        _password = row["password"].ToString();
-                        _admin = (bool)row["access_level"];
+                        _taikhoan.TenTaiKhoan = row["username"].ToString();
+                        _taikhoan.MatKhau = row["password"].ToString();
+                        _taikhoan.QuyenTruyCap = (bool)row["access_level"];
                     }
                     else
                     {
@@ -66,7 +65,7 @@ namespace test
                 }
 
                 // Kiểm tra quyền
-                if (_admin == true)
+                if (_taikhoan.QuyenTruyCap == true)
                 {
                     this.Hide();
                     FormMenu f = new FormMenu();

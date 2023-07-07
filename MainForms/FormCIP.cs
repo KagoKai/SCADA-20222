@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using test.SubForms;
+using test.MainForms;
 
 namespace test
 {
-    public partial class FormCIP : Form
+    public partial class FormCIP : ScadaUI
     {
         protected override void OnLoad(EventArgs e)
         {
@@ -21,15 +21,7 @@ namespace test
         public FormCIP()
         {
             InitializeComponent();
-        }
-        private void returnButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-        private void valve_Click(object sender, EventArgs e)
-        {
-            ValveConfig valve = new ValveConfig();
-            valve.ShowDialog();
+            this.returnButton.Click += base.returnButton_Click;
         }
     }
 }

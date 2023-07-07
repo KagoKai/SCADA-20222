@@ -744,7 +744,6 @@ namespace test
             this.returnButton.TabIndex = 36;
             this.returnButton.Text = "Quay lại";
             this.returnButton.UseVisualStyleBackColor = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
             // 
             // standardControl34
             // 
