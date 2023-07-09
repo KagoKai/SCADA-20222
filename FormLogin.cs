@@ -16,7 +16,7 @@ namespace test
     {
         private TaiKhoan _taikhoan = new TaiKhoan();
 
-        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-T3Q5P887\WINCC;Initial Catalog=SCADA;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=LAPTOP-01BLUST2\WINCC;Initial Catalog=SCADA;Integrated Security=True");
 
         public FormLogin()
         {

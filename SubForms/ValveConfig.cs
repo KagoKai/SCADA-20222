@@ -14,17 +14,10 @@ namespace test.SubForms
 {
     public partial class ValveConfig : Form, INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        private StandardControl _currentValve;
         private string _state;
-        public StandardControl CurrentValve 
-        {
-            get => _currentValve;
-            set => _currentValve = value;
-        }
-        public string State
-        {
-            get => _state;
+        public string State 
+        { 
+            get => this._state;
             set
             {
                 if (this._state == value) return;
@@ -32,36 +25,48 @@ namespace test.SubForms
                 NotifyPropertyChanged("State");
             }
         }
+        public StandardControl CurrentValve { get; set; }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        public event EventHandler StateChanged;
+
         protected override void OnLoad(EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
             base.OnLoad(e);
         }
+
         public ValveConfig(StandardControl currentValve)
         {
             InitializeComponent();
             CurrentValve = currentValve;
-            State = (!(CurrentValve.DiscreteValue1) & CurrentValve.DiscreteValue2) ? "ON" : "OFF";
+            updateState(CurrentValve.DiscreteValue1);
 
-            Binding valveNameBinding = new Binding("Text", CurrentValve, "Name", true, DataSourceUpdateMode.OnPropertyChanged);
-            Binding valveStateBinding = new Binding("Text", this, "State", false, DataSourceUpdateMode.OnPropertyChanged);
+            Binding valveNameBinding = new Binding("Text", CurrentValve, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
             valveName.DataBindings.Add(valveNameBinding);
+            Binding valveStateBinding = new Binding("Text", this, "State", false, DataSourceUpdateMode.OnPropertyChanged);
             valveState.DataBindings.Add(valveStateBinding);
+        }
+
+        private void updateState(bool state)
+        {
+            State = state ? "ON" : "OFF";
         }
 
         private void onButton_Click(object sender, EventArgs e)
         {
-            CurrentValve.DiscreteValue1 = false;
-            CurrentValve.DiscreteValue2 = true;
-            State = "ON";
+            CurrentValve.DiscreteValue1 = true;
+            updateState(CurrentValve.DiscreteValue1);
+            StateChanged.Invoke(this.CurrentValve, EventArgs.Empty);
         }
 
         private void offButton_Click(object sender, EventArgs e)
         {
-            CurrentValve.DiscreteValue1 = true;
-            CurrentValve.DiscreteValue2 = false;
-            State = "OFF";
+            CurrentValve.DiscreteValue1 = false;
+            updateState(CurrentValve.DiscreteValue1);
+            StateChanged.Invoke(this.CurrentValve, EventArgs.Empty);
         }
+
         public void NotifyPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -69,5 +74,6 @@ namespace test.SubForms
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+
     }
 }

@@ -35,7 +35,7 @@ namespace test
             this.standardControl2 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl24 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl32 = new SymbolFactoryDotNet.StandardControl();
-            this.V13 = new SymbolFactoryDotNet.StandardControl();
+            this.HMI_V13 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl5 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl36 = new SymbolFactoryDotNet.StandardControl();
@@ -57,8 +57,8 @@ namespace test
             this.standardControl103 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl13 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl14 = new SymbolFactoryDotNet.StandardControl();
-            this.V14 = new SymbolFactoryDotNet.StandardControl();
-            this.V17 = new SymbolFactoryDotNet.StandardControl();
+            this.HMI_V14 = new SymbolFactoryDotNet.StandardControl();
+            this.HMI_V17 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl18 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl19 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl20 = new SymbolFactoryDotNet.StandardControl();
@@ -71,7 +71,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl36)).BeginInit();
@@ -89,8 +89,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).BeginInit();
@@ -116,10 +116,10 @@ namespace test
             this.standardControl1.Category = "1TANK.cat2";
             this.standardControl1.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl1.DebugData"));
             this.standardControl1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl1.Location = new System.Drawing.Point(512, 240);
-            this.standardControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl1.Location = new System.Drawing.Point(410, 192);
+            this.standardControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl1.Name = "standardControl1";
-            this.standardControl1.Size = new System.Drawing.Size(159, 313);
+            this.standardControl1.Size = new System.Drawing.Size(127, 250);
             this.standardControl1.SymbolHandle = ((long)(1308633972));
             this.standardControl1.TabIndex = 0;
             // 
@@ -140,11 +140,11 @@ namespace test
             this.standardControl3.Category = "1MTR.cat2";
             this.standardControl3.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl3.DebugData"));
             this.standardControl3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl3.Location = new System.Drawing.Point(561, 489);
-            this.standardControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl3.Location = new System.Drawing.Point(449, 391);
+            this.standardControl3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl3.Name = "standardControl3";
             this.standardControl3.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl3.Size = new System.Drawing.Size(65, 123);
+            this.standardControl3.Size = new System.Drawing.Size(52, 98);
             this.standardControl3.SymbolHandle = ((long)(2061852846));
             this.standardControl3.TabIndex = 2;
             // 
@@ -165,11 +165,11 @@ namespace test
             this.standardControl2.Category = "1MXR.cat2";
             this.standardControl2.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl2.DebugData"));
             this.standardControl2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl2.Location = new System.Drawing.Point(560, 424);
-            this.standardControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl2.Location = new System.Drawing.Point(448, 339);
+            this.standardControl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl2.Name = "standardControl2";
             this.standardControl2.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate180;
-            this.standardControl2.Size = new System.Drawing.Size(66, 66);
+            this.standardControl2.Size = new System.Drawing.Size(53, 53);
             this.standardControl2.SymbolHandle = ((long)(1497078400));
             this.standardControl2.TabIndex = 3;
             // 
@@ -190,10 +190,10 @@ namespace test
             this.standardControl24.Category = "1PMP.cat2";
             this.standardControl24.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl24.DebugData"));
             this.standardControl24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl24.Location = new System.Drawing.Point(332, 391);
-            this.standardControl24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl24.Location = new System.Drawing.Point(266, 313);
+            this.standardControl24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl24.Name = "standardControl24";
-            this.standardControl24.Size = new System.Drawing.Size(75, 73);
+            this.standardControl24.Size = new System.Drawing.Size(60, 58);
             this.standardControl24.SymbolHandle = ((long)(2096695874));
             this.standardControl24.TabIndex = 12;
             // 
@@ -215,33 +215,32 @@ namespace test
             this.standardControl32.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl32.DebugData"));
             this.standardControl32.FillColor = System.Drawing.Color.Lime;
             this.standardControl32.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl32.Location = new System.Drawing.Point(582, 213);
-            this.standardControl32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl32.Location = new System.Drawing.Point(466, 170);
+            this.standardControl32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl32.Name = "standardControl32";
-            this.standardControl32.Size = new System.Drawing.Size(20, 52);
+            this.standardControl32.Size = new System.Drawing.Size(16, 42);
             this.standardControl32.SymbolHandle = ((long)(1088408125));
             this.standardControl32.TabIndex = 10;
             // 
-            // V13
+            // HMI_V13
             // 
-            this.V13.AnalogIntValue1 = ((short)(0));
-            this.V13.AnalogValue1 = 0D;
-            this.V13.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
-            this.V13.BackColor = System.Drawing.Color.Transparent;
-            this.V13.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.V13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.V13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
-            this.V13.BlinkColor = System.Drawing.Color.Red;
-            this.V13.Category = "1VLV.cat2";
-            this.V13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.V13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V13.DebugData"));
-            this.V13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.V13.Location = new System.Drawing.Point(485, 160);
-            this.V13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.V13.Name = "V13";
-            this.V13.Size = new System.Drawing.Size(45, 46);
-            this.V13.SymbolHandle = ((long)(427465044));
-            this.V13.TabIndex = 69;
+            this.HMI_V13.AnalogIntValue1 = ((short)(0));
+            this.HMI_V13.AnalogValue1 = 0D;
+            this.HMI_V13.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.HMI_V13.BackColor = System.Drawing.Color.Transparent;
+            this.HMI_V13.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.HMI_V13.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band1"));
+            this.HMI_V13.BlinkColor = System.Drawing.Color.Red;
+            this.HMI_V13.Category = "1VLV.cat2";
+            this.HMI_V13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HMI_V13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("HMI_V13.DebugData"));
+            this.HMI_V13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.HMI_V13.Location = new System.Drawing.Point(388, 128);
+            this.HMI_V13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMI_V13.Name = "HMI_V13";
+            this.HMI_V13.Size = new System.Drawing.Size(36, 37);
+            this.HMI_V13.SymbolHandle = ((long)(427465044));
+            this.HMI_V13.TabIndex = 69;
             // 
             // standardControl17
             // 
@@ -261,10 +260,10 @@ namespace test
             this.standardControl17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl17.DebugData"));
             this.standardControl17.FillColor = System.Drawing.Color.Lime;
             this.standardControl17.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl17.Location = new System.Drawing.Point(441, 185);
-            this.standardControl17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl17.Location = new System.Drawing.Point(353, 148);
+            this.standardControl17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl17.Name = "standardControl17";
-            this.standardControl17.Size = new System.Drawing.Size(47, 21);
+            this.standardControl17.Size = new System.Drawing.Size(38, 17);
             this.standardControl17.SymbolHandle = ((long)(2078383901));
             this.standardControl17.TabIndex = 8;
             // 
@@ -286,10 +285,10 @@ namespace test
             this.standardControl5.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl5.DebugData"));
             this.standardControl5.FillColor = System.Drawing.Color.Lime;
             this.standardControl5.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl5.Location = new System.Drawing.Point(140, 419);
-            this.standardControl5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl5.Location = new System.Drawing.Point(112, 335);
+            this.standardControl5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl5.Name = "standardControl5";
-            this.standardControl5.Size = new System.Drawing.Size(192, 19);
+            this.standardControl5.Size = new System.Drawing.Size(154, 15);
             this.standardControl5.SymbolHandle = ((long)(823526416));
             this.standardControl5.TabIndex = 8;
             // 
@@ -311,10 +310,10 @@ namespace test
             this.standardControl36.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl36.DebugData"));
             this.standardControl36.FillColor = System.Drawing.Color.Blue;
             this.standardControl36.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl36.Location = new System.Drawing.Point(758, 445);
-            this.standardControl36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl36.Location = new System.Drawing.Point(606, 356);
+            this.standardControl36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl36.Name = "standardControl36";
-            this.standardControl36.Size = new System.Drawing.Size(24, 30);
+            this.standardControl36.Size = new System.Drawing.Size(19, 24);
             this.standardControl36.SymbolHandle = ((long)(1564703331));
             this.standardControl36.TabIndex = 10;
             // 
@@ -336,10 +335,10 @@ namespace test
             this.standardControl42.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl42.DebugData"));
             this.standardControl42.FillColor = System.Drawing.Color.Blue;
             this.standardControl42.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl42.Location = new System.Drawing.Point(769, 591);
-            this.standardControl42.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl42.Location = new System.Drawing.Point(615, 473);
+            this.standardControl42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl42.Name = "standardControl42";
-            this.standardControl42.Size = new System.Drawing.Size(26, 40);
+            this.standardControl42.Size = new System.Drawing.Size(21, 32);
             this.standardControl42.SymbolHandle = ((long)(328113829));
             this.standardControl42.TabIndex = 72;
             // 
@@ -361,10 +360,10 @@ namespace test
             this.standardControl43.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl43.DebugData"));
             this.standardControl43.FillColor = System.Drawing.Color.Blue;
             this.standardControl43.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl43.Location = new System.Drawing.Point(769, 512);
-            this.standardControl43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl43.Location = new System.Drawing.Point(615, 410);
+            this.standardControl43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl43.Name = "standardControl43";
-            this.standardControl43.Size = new System.Drawing.Size(26, 46);
+            this.standardControl43.Size = new System.Drawing.Size(21, 37);
             this.standardControl43.SymbolHandle = ((long)(1676819940));
             this.standardControl43.TabIndex = 10;
             // 
@@ -373,10 +372,9 @@ namespace test
             this.returnButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.returnButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.returnButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.returnButton.Location = new System.Drawing.Point(1204, 661);
-            this.returnButton.Margin = new System.Windows.Forms.Padding(4);
+            this.returnButton.Location = new System.Drawing.Point(963, 529);
             this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(131, 47);
+            this.returnButton.Size = new System.Drawing.Size(105, 38);
             this.returnButton.TabIndex = 74;
             this.returnButton.Text = "Quay lại";
             this.returnButton.UseVisualStyleBackColor = false;
@@ -387,10 +385,10 @@ namespace test
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(95, 404);
-            this.label3.Margin = new System.Windows.Forms.Padding(3);
+            this.label3.Location = new System.Drawing.Point(76, 323);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 50);
+            this.label3.Size = new System.Drawing.Size(146, 40);
             this.label3.TabIndex = 128;
             this.label3.Text = "Tank gạo";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -401,10 +399,10 @@ namespace test
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1078, 493);
-            this.label4.Margin = new System.Windows.Forms.Padding(3);
+            this.label4.Location = new System.Drawing.Point(862, 394);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 50);
+            this.label4.Size = new System.Drawing.Size(146, 40);
             this.label4.TabIndex = 129;
             this.label4.Text = "Tank malt";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -415,10 +413,10 @@ namespace test
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1079, 575);
-            this.label8.Margin = new System.Windows.Forms.Padding(3);
+            this.label8.Location = new System.Drawing.Point(863, 460);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 50);
+            this.label8.Size = new System.Drawing.Size(146, 40);
             this.label8.TabIndex = 134;
             this.label8.Text = "Đường nước hồi";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -441,10 +439,10 @@ namespace test
             this.standardControl6.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl6.DebugData"));
             this.standardControl6.FillColor = System.Drawing.Color.Lime;
             this.standardControl6.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl6.Location = new System.Drawing.Point(407, 395);
-            this.standardControl6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl6.Location = new System.Drawing.Point(326, 316);
+            this.standardControl6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl6.Name = "standardControl6";
-            this.standardControl6.Size = new System.Drawing.Size(22, 25);
+            this.standardControl6.Size = new System.Drawing.Size(18, 20);
             this.standardControl6.SymbolHandle = ((long)(1762314528));
             this.standardControl6.TabIndex = 135;
             // 
@@ -466,10 +464,10 @@ namespace test
             this.standardControl31.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl31.DebugData"));
             this.standardControl31.FillColor = System.Drawing.Color.Lime;
             this.standardControl31.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl31.Location = new System.Drawing.Point(415, 213);
-            this.standardControl31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl31.Location = new System.Drawing.Point(332, 170);
+            this.standardControl31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl31.Name = "standardControl31";
-            this.standardControl31.Size = new System.Drawing.Size(16, 184);
+            this.standardControl31.Size = new System.Drawing.Size(13, 147);
             this.standardControl31.SymbolHandle = ((long)(1221608394));
             this.standardControl31.TabIndex = 10;
             // 
@@ -491,10 +489,10 @@ namespace test
             this.standardControl7.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl7.DebugData"));
             this.standardControl7.FillColor = System.Drawing.Color.Lime;
             this.standardControl7.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl7.Location = new System.Drawing.Point(417, 189);
-            this.standardControl7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl7.Location = new System.Drawing.Point(334, 151);
+            this.standardControl7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl7.Name = "standardControl7";
-            this.standardControl7.Size = new System.Drawing.Size(24, 25);
+            this.standardControl7.Size = new System.Drawing.Size(19, 20);
             this.standardControl7.SymbolHandle = ((long)(630871749));
             this.standardControl7.TabIndex = 136;
             // 
@@ -516,10 +514,10 @@ namespace test
             this.standardControl4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl4.DebugData"));
             this.standardControl4.FillColor = System.Drawing.Color.Lime;
             this.standardControl4.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl4.Location = new System.Drawing.Point(528, 185);
-            this.standardControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl4.Location = new System.Drawing.Point(422, 148);
+            this.standardControl4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl4.Name = "standardControl4";
-            this.standardControl4.Size = new System.Drawing.Size(47, 21);
+            this.standardControl4.Size = new System.Drawing.Size(38, 17);
             this.standardControl4.SymbolHandle = ((long)(2078383901));
             this.standardControl4.TabIndex = 137;
             // 
@@ -541,10 +539,10 @@ namespace test
             this.standardControl8.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl8.DebugData"));
             this.standardControl8.FillColor = System.Drawing.Color.Lime;
             this.standardControl8.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl8.Location = new System.Drawing.Point(575, 188);
-            this.standardControl8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl8.Location = new System.Drawing.Point(460, 150);
+            this.standardControl8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl8.Name = "standardControl8";
-            this.standardControl8.Size = new System.Drawing.Size(24, 27);
+            this.standardControl8.Size = new System.Drawing.Size(19, 22);
             this.standardControl8.SymbolHandle = ((long)(1564703331));
             this.standardControl8.TabIndex = 138;
             // 
@@ -566,10 +564,10 @@ namespace test
             this.standardControl9.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl9.DebugData"));
             this.standardControl9.FillColor = System.Drawing.Color.Blue;
             this.standardControl9.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl9.Location = new System.Drawing.Point(668, 443);
-            this.standardControl9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl9.Location = new System.Drawing.Point(534, 354);
+            this.standardControl9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl9.Name = "standardControl9";
-            this.standardControl9.Size = new System.Drawing.Size(47, 21);
+            this.standardControl9.Size = new System.Drawing.Size(38, 17);
             this.standardControl9.SymbolHandle = ((long)(2078383901));
             this.standardControl9.TabIndex = 139;
             // 
@@ -591,10 +589,10 @@ namespace test
             this.standardControl10.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl10.DebugData"));
             this.standardControl10.FillColor = System.Drawing.Color.Blue;
             this.standardControl10.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl10.Location = new System.Drawing.Point(765, 470);
-            this.standardControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl10.Location = new System.Drawing.Point(612, 376);
+            this.standardControl10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl10.Name = "standardControl10";
-            this.standardControl10.Size = new System.Drawing.Size(20, 52);
+            this.standardControl10.Size = new System.Drawing.Size(16, 42);
             this.standardControl10.SymbolHandle = ((long)(1088408125));
             this.standardControl10.TabIndex = 140;
             // 
@@ -616,10 +614,10 @@ namespace test
             this.standardControl11.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl11.DebugData"));
             this.standardControl11.FillColor = System.Drawing.Color.Blue;
             this.standardControl11.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl11.Location = new System.Drawing.Point(711, 443);
-            this.standardControl11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl11.Location = new System.Drawing.Point(569, 354);
+            this.standardControl11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl11.Name = "standardControl11";
-            this.standardControl11.Size = new System.Drawing.Size(47, 21);
+            this.standardControl11.Size = new System.Drawing.Size(38, 17);
             this.standardControl11.SymbolHandle = ((long)(2078383901));
             this.standardControl11.TabIndex = 141;
             // 
@@ -641,10 +639,10 @@ namespace test
             this.standardControl12.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl12.DebugData"));
             this.standardControl12.FillColor = System.Drawing.Color.Blue;
             this.standardControl12.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl12.Location = new System.Drawing.Point(765, 546);
-            this.standardControl12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl12.Location = new System.Drawing.Point(612, 437);
+            this.standardControl12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl12.Name = "standardControl12";
-            this.standardControl12.Size = new System.Drawing.Size(20, 52);
+            this.standardControl12.Size = new System.Drawing.Size(16, 42);
             this.standardControl12.SymbolHandle = ((long)(1088408125));
             this.standardControl12.TabIndex = 142;
             // 
@@ -661,10 +659,11 @@ namespace test
             this.standardControl103.Category = "1SENS.cat2";
             this.standardControl103.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl103.DebugData"));
             this.standardControl103.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl103.Location = new System.Drawing.Point(460, 451);
+            this.standardControl103.Location = new System.Drawing.Point(368, 361);
+            this.standardControl103.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl103.Name = "standardControl103";
             this.standardControl103.Rotation = SymbolFactoryNetEngine.RotationOptions.Rotate90;
-            this.standardControl103.Size = new System.Drawing.Size(82, 35);
+            this.standardControl103.Size = new System.Drawing.Size(66, 28);
             this.standardControl103.SymbolHandle = ((long)(543236406));
             this.standardControl103.TabIndex = 208;
             // 
@@ -686,10 +685,10 @@ namespace test
             this.standardControl13.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl13.DebugData"));
             this.standardControl13.FillColor = System.Drawing.Color.Blue;
             this.standardControl13.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl13.Location = new System.Drawing.Point(795, 523);
-            this.standardControl13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl13.Location = new System.Drawing.Point(636, 418);
+            this.standardControl13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl13.Name = "standardControl13";
-            this.standardControl13.Size = new System.Drawing.Size(56, 23);
+            this.standardControl13.Size = new System.Drawing.Size(45, 18);
             this.standardControl13.SymbolHandle = ((long)(2078383901));
             this.standardControl13.TabIndex = 209;
             // 
@@ -711,54 +710,54 @@ namespace test
             this.standardControl14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl14.DebugData"));
             this.standardControl14.FillColor = System.Drawing.Color.Blue;
             this.standardControl14.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl14.Location = new System.Drawing.Point(795, 605);
-            this.standardControl14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl14.Location = new System.Drawing.Point(636, 484);
+            this.standardControl14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl14.Name = "standardControl14";
-            this.standardControl14.Size = new System.Drawing.Size(56, 23);
+            this.standardControl14.Size = new System.Drawing.Size(45, 18);
             this.standardControl14.SymbolHandle = ((long)(2078383901));
             this.standardControl14.TabIndex = 210;
             // 
-            // V14
+            // HMI_V14
             // 
-            this.V14.AnalogIntValue1 = ((short)(0));
-            this.V14.AnalogValue1 = 0D;
-            this.V14.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
-            this.V14.BackColor = System.Drawing.Color.Transparent;
-            this.V14.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.V14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.V14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
-            this.V14.BlinkColor = System.Drawing.Color.Red;
-            this.V14.Category = "1VLV.cat2";
-            this.V14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.V14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V14.DebugData"));
-            this.V14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.V14.Location = new System.Drawing.Point(849, 499);
-            this.V14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.V14.Name = "V14";
-            this.V14.Size = new System.Drawing.Size(45, 46);
-            this.V14.SymbolHandle = ((long)(427465044));
-            this.V14.TabIndex = 211;
+            this.HMI_V14.AnalogIntValue1 = ((short)(0));
+            this.HMI_V14.AnalogValue1 = 0D;
+            this.HMI_V14.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.HMI_V14.BackColor = System.Drawing.Color.Transparent;
+            this.HMI_V14.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.HMI_V14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.HMI_V14.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.HMI_V14.BlinkColor = System.Drawing.Color.Red;
+            this.HMI_V14.Category = "1VLV.cat2";
+            this.HMI_V14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HMI_V14.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("HMI_V14.DebugData"));
+            this.HMI_V14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.HMI_V14.Location = new System.Drawing.Point(679, 399);
+            this.HMI_V14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMI_V14.Name = "HMI_V14";
+            this.HMI_V14.Size = new System.Drawing.Size(36, 37);
+            this.HMI_V14.SymbolHandle = ((long)(427465044));
+            this.HMI_V14.TabIndex = 211;
             // 
-            // V17
+            // HMI_V17
             // 
-            this.V17.AnalogIntValue1 = ((short)(0));
-            this.V17.AnalogValue1 = 0D;
-            this.V17.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
-            this.V17.BackColor = System.Drawing.Color.Transparent;
-            this.V17.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.V17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.V17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
-            this.V17.BlinkColor = System.Drawing.Color.Red;
-            this.V17.Category = "1VLV.cat2";
-            this.V17.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.V17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("V17.DebugData"));
-            this.V17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.V17.Location = new System.Drawing.Point(849, 581);
-            this.V17.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.V17.Name = "V17";
-            this.V17.Size = new System.Drawing.Size(45, 46);
-            this.V17.SymbolHandle = ((long)(427465044));
-            this.V17.TabIndex = 212;
+            this.HMI_V17.AnalogIntValue1 = ((short)(0));
+            this.HMI_V17.AnalogValue1 = 0D;
+            this.HMI_V17.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.HMI_V17.BackColor = System.Drawing.Color.Transparent;
+            this.HMI_V17.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.HMI_V17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.HMI_V17.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band2"));
+            this.HMI_V17.BlinkColor = System.Drawing.Color.Red;
+            this.HMI_V17.Category = "1VLV.cat2";
+            this.HMI_V17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HMI_V17.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("HMI_V17.DebugData"));
+            this.HMI_V17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.HMI_V17.Location = new System.Drawing.Point(679, 465);
+            this.HMI_V17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.HMI_V17.Name = "HMI_V17";
+            this.HMI_V17.Size = new System.Drawing.Size(36, 37);
+            this.HMI_V17.SymbolHandle = ((long)(427465044));
+            this.HMI_V17.TabIndex = 212;
             // 
             // standardControl18
             // 
@@ -778,10 +777,10 @@ namespace test
             this.standardControl18.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl18.DebugData"));
             this.standardControl18.FillColor = System.Drawing.Color.Blue;
             this.standardControl18.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl18.Location = new System.Drawing.Point(892, 523);
-            this.standardControl18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl18.Location = new System.Drawing.Point(714, 418);
+            this.standardControl18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl18.Name = "standardControl18";
-            this.standardControl18.Size = new System.Drawing.Size(56, 23);
+            this.standardControl18.Size = new System.Drawing.Size(45, 18);
             this.standardControl18.SymbolHandle = ((long)(2078383901));
             this.standardControl18.TabIndex = 213;
             // 
@@ -803,10 +802,10 @@ namespace test
             this.standardControl19.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl19.DebugData"));
             this.standardControl19.FillColor = System.Drawing.Color.Blue;
             this.standardControl19.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl19.Location = new System.Drawing.Point(892, 605);
-            this.standardControl19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl19.Location = new System.Drawing.Point(714, 484);
+            this.standardControl19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl19.Name = "standardControl19";
-            this.standardControl19.Size = new System.Drawing.Size(56, 23);
+            this.standardControl19.Size = new System.Drawing.Size(45, 18);
             this.standardControl19.SymbolHandle = ((long)(2078383901));
             this.standardControl19.TabIndex = 214;
             // 
@@ -827,10 +826,10 @@ namespace test
             this.standardControl20.Category = "1PMP.cat2";
             this.standardControl20.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl20.DebugData"));
             this.standardControl20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl20.Location = new System.Drawing.Point(947, 497);
-            this.standardControl20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl20.Location = new System.Drawing.Point(758, 398);
+            this.standardControl20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl20.Name = "standardControl20";
-            this.standardControl20.Size = new System.Drawing.Size(75, 73);
+            this.standardControl20.Size = new System.Drawing.Size(60, 58);
             this.standardControl20.SymbolHandle = ((long)(2096695874));
             this.standardControl20.TabIndex = 215;
             // 
@@ -851,10 +850,10 @@ namespace test
             this.standardControl21.Category = "1PMP.cat2";
             this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
             this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl21.Location = new System.Drawing.Point(948, 578);
-            this.standardControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl21.Location = new System.Drawing.Point(758, 462);
+            this.standardControl21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl21.Name = "standardControl21";
-            this.standardControl21.Size = new System.Drawing.Size(75, 73);
+            this.standardControl21.Size = new System.Drawing.Size(60, 58);
             this.standardControl21.SymbolHandle = ((long)(2096695874));
             this.standardControl21.TabIndex = 216;
             // 
@@ -876,10 +875,10 @@ namespace test
             this.standardControl22.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl22.DebugData"));
             this.standardControl22.FillColor = System.Drawing.Color.Blue;
             this.standardControl22.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl22.Location = new System.Drawing.Point(1022, 507);
-            this.standardControl22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl22.Location = new System.Drawing.Point(818, 406);
+            this.standardControl22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl22.Name = "standardControl22";
-            this.standardControl22.Size = new System.Drawing.Size(56, 23);
+            this.standardControl22.Size = new System.Drawing.Size(45, 18);
             this.standardControl22.SymbolHandle = ((long)(2078383901));
             this.standardControl22.TabIndex = 217;
             // 
@@ -901,10 +900,10 @@ namespace test
             this.standardControl23.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl23.DebugData"));
             this.standardControl23.FillColor = System.Drawing.Color.Blue;
             this.standardControl23.FillColorMode = SymbolFactoryNetEngine.FillColorModeOptions.Solid;
-            this.standardControl23.Location = new System.Drawing.Point(1023, 588);
-            this.standardControl23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.standardControl23.Location = new System.Drawing.Point(818, 470);
+            this.standardControl23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.standardControl23.Name = "standardControl23";
-            this.standardControl23.Size = new System.Drawing.Size(56, 23);
+            this.standardControl23.Size = new System.Drawing.Size(45, 18);
             this.standardControl23.SymbolHandle = ((long)(2078383901));
             this.standardControl23.TabIndex = 218;
             // 
@@ -912,19 +911,20 @@ namespace test
             // 
             this.cipTitle.AutoSize = true;
             this.cipTitle.Font = new System.Drawing.Font("Segoe UI", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cipTitle.Location = new System.Drawing.Point(516, 27);
+            this.cipTitle.Location = new System.Drawing.Point(413, 22);
+            this.cipTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cipTitle.Name = "cipTitle";
-            this.cipTitle.Size = new System.Drawing.Size(300, 71);
+            this.cipTitle.Size = new System.Drawing.Size(245, 59);
             this.cipTitle.TabIndex = 219;
             this.cipTitle.Text = "TANK GẠO";
             this.cipTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Noi_gao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1078, 577);
             this.Controls.Add(this.cipTitle);
             this.Controls.Add(this.standardControl23);
             this.Controls.Add(this.standardControl22);
@@ -932,8 +932,8 @@ namespace test
             this.Controls.Add(this.standardControl20);
             this.Controls.Add(this.standardControl19);
             this.Controls.Add(this.standardControl18);
-            this.Controls.Add(this.V17);
-            this.Controls.Add(this.V14);
+            this.Controls.Add(this.HMI_V17);
+            this.Controls.Add(this.HMI_V14);
             this.Controls.Add(this.standardControl14);
             this.Controls.Add(this.standardControl13);
             this.Controls.Add(this.standardControl12);
@@ -949,7 +949,7 @@ namespace test
             this.Controls.Add(this.label3);
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.standardControl42);
-            this.Controls.Add(this.V13);
+            this.Controls.Add(this.HMI_V13);
             this.Controls.Add(this.standardControl24);
             this.Controls.Add(this.standardControl2);
             this.Controls.Add(this.standardControl3);
@@ -961,7 +961,7 @@ namespace test
             this.Controls.Add(this.standardControl5);
             this.Controls.Add(this.standardControl1);
             this.Controls.Add(this.standardControl103);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Noi_gao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Noi_gao";
@@ -971,7 +971,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl36)).EndInit();
@@ -989,8 +989,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl103)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.V17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HMI_V17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).EndInit();
@@ -1009,7 +1009,7 @@ namespace test
         private SymbolFactoryDotNet.StandardControl standardControl2;
         private SymbolFactoryDotNet.StandardControl standardControl24;
         private SymbolFactoryDotNet.StandardControl standardControl32;
-        private SymbolFactoryDotNet.StandardControl V13;
+        private SymbolFactoryDotNet.StandardControl HMI_V13;
         private SymbolFactoryDotNet.StandardControl standardControl17;
         private SymbolFactoryDotNet.StandardControl standardControl5;
         private SymbolFactoryDotNet.StandardControl standardControl36;
@@ -1031,8 +1031,8 @@ namespace test
         private SymbolFactoryDotNet.StandardControl standardControl103;
         private SymbolFactoryDotNet.StandardControl standardControl13;
         private SymbolFactoryDotNet.StandardControl standardControl14;
-        private SymbolFactoryDotNet.StandardControl V14;
-        private SymbolFactoryDotNet.StandardControl V17;
+        private SymbolFactoryDotNet.StandardControl HMI_V14;
+        private SymbolFactoryDotNet.StandardControl HMI_V17;
         private SymbolFactoryDotNet.StandardControl standardControl18;
         private SymbolFactoryDotNet.StandardControl standardControl19;
         private SymbolFactoryDotNet.StandardControl standardControl20;

@@ -34,6 +34,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="NetToolKit, Version=2.1.0.444, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
+    <Reference Include="S7.Net">
+      <HintPath>..\..\..\Downloads\NOnoNo\S7.NET\S7.Net.dll</HintPath>
+    </Reference>
     <Reference Include="SKCLNET, Version=4.4.1.0, Culture=neutral, PublicKeyToken=d5770e63406d04a0" />
     <Reference Include="SymbolFactoryDotNet, Version=2.0.0.221, Culture=neutral, processorArchitecture=MSIL" />
     <Reference Include="SymbolFactoryNetEngine, Version=2.0.0.221, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
@@ -51,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\PLCComm.cs" />
     <Compile Include="Database\Pump.cs" />
     <Compile Include="Database\TaiKhoan.cs" />
     <Compile Include="Database\Valve.cs" />
