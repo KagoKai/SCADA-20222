@@ -82,10 +82,9 @@ namespace test
 
         public void HMI_ThayDoi(object sender, EventArgs e)
         {
-            if (MyPlc.WriteClass(MyComm, 1) == ErrorCode.NoError)
-            {
-                MessageBox.Show("Successfully written to PLC");
-            }
+            timerComm.Stop();
+            MyPlc.WriteClass(MyComm, 1);
+            timerComm.Start();
         }
     }
 }
