@@ -50,12 +50,18 @@ namespace test
             this.buttonHoa = new System.Windows.Forms.Button();
             this.buttonCIP = new System.Windows.Forms.Button();
             this.timerComm = new System.Windows.Forms.Timer(this.components);
+            this.AutMan_Light = new SymbolFactoryDotNet.StandardControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Power_Light = new SymbolFactoryDotNet.StandardControl();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).BeginInit();
             this.SuspendLayout();
             // 
             // logoutButton
@@ -339,7 +345,7 @@ namespace test
             // 
             this.buttonCIP.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonCIP.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCIP.Location = new System.Drawing.Point(22, 475);
+            this.buttonCIP.Location = new System.Drawing.Point(22, 468);
             this.buttonCIP.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCIP.Name = "buttonCIP";
             this.buttonCIP.Size = new System.Drawing.Size(105, 38);
@@ -350,7 +356,69 @@ namespace test
             // 
             // timerComm
             // 
-            this.timerComm.Interval = 1000;
+            this.timerComm.Interval = 200;
+            // 
+            // AutMan_Light
+            // 
+            this.AutMan_Light.AnalogIntValue1 = ((short)(0));
+            this.AutMan_Light.AnalogValue1 = 0D;
+            this.AutMan_Light.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.AutMan_Light.BackColor = System.Drawing.Color.Transparent;
+            this.AutMan_Light.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.AutMan_Light.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Yellow, "Band1"));
+            this.AutMan_Light.BlinkColor = System.Drawing.Color.Red;
+            this.AutMan_Light.Category = "1Btn.cat2";
+            this.AutMan_Light.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AutMan_Light.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("AutMan_Light.DebugData"));
+            this.AutMan_Light.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.AutMan_Light.Location = new System.Drawing.Point(46, 230);
+            this.AutMan_Light.Name = "AutMan_Light";
+            this.AutMan_Light.Size = new System.Drawing.Size(65, 63);
+            this.AutMan_Light.SymbolHandle = ((long)(646493301));
+            this.AutMan_Light.TabIndex = 27;
+            this.AutMan_Light.Click += new System.EventHandler(this.AutMan_Light_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(26, 295);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "AUT/MAN";
+            // 
+            // Power_Light
+            // 
+            this.Power_Light.AnalogIntValue1 = ((short)(0));
+            this.Power_Light.AnalogValue1 = 0D;
+            this.Power_Light.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.Power_Light.BackColor = System.Drawing.Color.Transparent;
+            this.Power_Light.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.Power_Light.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band1"));
+            this.Power_Light.BlinkColor = System.Drawing.Color.Red;
+            this.Power_Light.Category = "1Btn.cat2";
+            this.Power_Light.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Power_Light.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("Power_Light.DebugData"));
+            this.Power_Light.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Power_Light.Location = new System.Drawing.Point(46, 136);
+            this.Power_Light.Name = "Power_Light";
+            this.Power_Light.Size = new System.Drawing.Size(65, 63);
+            this.Power_Light.SymbolHandle = ((long)(1392289550));
+            this.Power_Light.TabIndex = 29;
+            this.Power_Light.Click += new System.EventHandler(this.Power_Light_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(39, 202);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 25);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "POWER";
             // 
             // FormMenu
             // 
@@ -358,6 +426,10 @@ namespace test
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1266, 682);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Power_Light);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AutMan_Light);
             this.Controls.Add(this.buttonCIP);
             this.Controls.Add(this.buttonHoa);
             this.Controls.Add(this.buttonLang);
@@ -388,6 +460,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +488,9 @@ namespace test
         private System.Windows.Forms.Button buttonHoa;
         private System.Windows.Forms.Button buttonCIP;
         private System.Windows.Forms.Timer timerComm;
+        private SymbolFactoryDotNet.StandardControl AutMan_Light;
+        private System.Windows.Forms.Label label1;
+        private SymbolFactoryDotNet.StandardControl Power_Light;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -14,6 +14,8 @@ namespace test.SubForms
 {
     public partial class ValveConfig : Form, INotifyPropertyChanged
     {
+        private bool _powerState;
+        private bool _autmanState;
         private string _state;
         public string State 
         { 
@@ -36,10 +38,16 @@ namespace test.SubForms
             base.OnLoad(e);
         }
 
-        public ValveConfig(StandardControl currentValve)
+        public ValveConfig(StandardControl currentValve, bool powerState, bool autmanState)
         {
             InitializeComponent();
             CurrentValve = currentValve;
+            _powerState = powerState;
+            _autmanState = autmanState;
+
+            onButton.Visible = !_autmanState;
+            offButton.Visible = !_autmanState;
+
             updateState(CurrentValve.DiscreteValue1);
 
             Binding valveNameBinding = new Binding("Text", CurrentValve, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
@@ -55,7 +63,7 @@ namespace test.SubForms
 
         private void onButton_Click(object sender, EventArgs e)
         {
-            CurrentValve.DiscreteValue1 = true;
+            CurrentValve.DiscreteValue1 = true & _powerState;
             updateState(CurrentValve.DiscreteValue1);
             StateChanged.Invoke(this.CurrentValve, EventArgs.Empty);
         }
@@ -74,6 +82,5 @@ namespace test.SubForms
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-
     }
 }

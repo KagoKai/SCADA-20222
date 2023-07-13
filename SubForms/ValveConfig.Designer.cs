@@ -41,7 +41,7 @@ namespace test.SubForms
             // 
             this.onButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.onButton.Location = new System.Drawing.Point(41, 104);
-            this.onButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.onButton.Margin = new System.Windows.Forms.Padding(2);
             this.onButton.Name = "onButton";
             this.onButton.Size = new System.Drawing.Size(68, 36);
             this.onButton.TabIndex = 0;
@@ -64,7 +64,7 @@ namespace test.SubForms
             // 
             this.offButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.offButton.Location = new System.Drawing.Point(181, 104);
-            this.offButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.offButton.Margin = new System.Windows.Forms.Padding(2);
             this.offButton.Name = "offButton";
             this.offButton.Size = new System.Drawing.Size(68, 36);
             this.offButton.TabIndex = 3;
@@ -119,7 +119,7 @@ namespace test.SubForms
             this.Controls.Add(this.offButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.onButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ValveConfig";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điều khiển Van";

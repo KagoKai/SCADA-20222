@@ -66,6 +66,10 @@ namespace test
             this.standardControl22 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl23 = new SymbolFactoryDotNet.StandardControl();
             this.cipTitle = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Power_Light = new SymbolFactoryDotNet.StandardControl();
+            this.label1 = new System.Windows.Forms.Label();
+            this.AutMan_Light = new SymbolFactoryDotNet.StandardControl();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
@@ -97,6 +101,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).BeginInit();
             this.SuspendLayout();
             // 
             // standardControl1
@@ -917,12 +923,76 @@ namespace test
             this.cipTitle.Text = "TANK GẠO";
             this.cipTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(44, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 25);
+            this.label2.TabIndex = 223;
+            this.label2.Text = "POWER";
+            // 
+            // Power_Light
+            // 
+            this.Power_Light.AnalogIntValue1 = ((short)(0));
+            this.Power_Light.AnalogValue1 = 0D;
+            this.Power_Light.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.Power_Light.BackColor = System.Drawing.Color.Transparent;
+            this.Power_Light.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.Power_Light.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Lime, "Band1"));
+            this.Power_Light.BlinkColor = System.Drawing.Color.Red;
+            this.Power_Light.Category = "1Btn.cat2";
+            this.Power_Light.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Power_Light.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("Power_Light.DebugData"));
+            this.Power_Light.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Power_Light.Location = new System.Drawing.Point(51, 22);
+            this.Power_Light.Name = "Power_Light";
+            this.Power_Light.Size = new System.Drawing.Size(65, 63);
+            this.Power_Light.SymbolHandle = ((long)(1392289550));
+            this.Power_Light.TabIndex = 222;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(31, 183);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 25);
+            this.label1.TabIndex = 221;
+            this.label1.Text = "AUT/MAN";
+            // 
+            // AutMan_Light
+            // 
+            this.AutMan_Light.AnalogIntValue1 = ((short)(0));
+            this.AutMan_Light.AnalogValue1 = 0D;
+            this.AutMan_Light.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.AutMan_Light.BackColor = System.Drawing.Color.Transparent;
+            this.AutMan_Light.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.AutMan_Light.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Yellow, "Band1"));
+            this.AutMan_Light.BlinkColor = System.Drawing.Color.Red;
+            this.AutMan_Light.Category = "1Btn.cat2";
+            this.AutMan_Light.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.AutMan_Light.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("AutMan_Light.DebugData"));
+            this.AutMan_Light.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.AutMan_Light.Location = new System.Drawing.Point(51, 118);
+            this.AutMan_Light.Name = "AutMan_Light";
+            this.AutMan_Light.Size = new System.Drawing.Size(65, 63);
+            this.AutMan_Light.SymbolHandle = ((long)(646493301));
+            this.AutMan_Light.TabIndex = 220;
+            // 
             // Noi_gao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1078, 577);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Power_Light);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.AutMan_Light);
             this.Controls.Add(this.cipTitle);
             this.Controls.Add(this.standardControl23);
             this.Controls.Add(this.standardControl22);
@@ -964,6 +1034,7 @@ namespace test
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Noi_gao";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.Noi_gao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).EndInit();
@@ -995,6 +1066,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1038,5 +1111,9 @@ namespace test
         private SymbolFactoryDotNet.StandardControl standardControl22;
         private SymbolFactoryDotNet.StandardControl standardControl23;
         private System.Windows.Forms.Label cipTitle;
+        private System.Windows.Forms.Label label2;
+        private SymbolFactoryDotNet.StandardControl Power_Light;
+        private System.Windows.Forms.Label label1;
+        private SymbolFactoryDotNet.StandardControl AutMan_Light;
     }
 }

@@ -137,7 +137,7 @@ namespace test
         }
 
         #endregion
-        public System.Drawing.SizeF AutoScaleDimensions { get; set; }
+        public new System.Drawing.SizeF AutoScaleDimensions { get; set; }
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label password;
         private System.Windows.Forms.Button loginButton;

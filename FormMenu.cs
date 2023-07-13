@@ -17,10 +17,13 @@ namespace test
     public partial class FormMenu : Form
     {
         private Plc _myPlc;
-        private string _ip = "169.254.116.178";
+        private readonly string _ip = "169.254.116.178";
         public Plc MyPlc { get => _myPlc; private set => _myPlc = value; }
         public PLCComm MyComm { get; set; }
 
+        private readonly string _powerAddressDB = "DB2.DBX0.0";
+        private readonly string _autmanAddressDB = "DB2.DBX0.1";
+            
         protected override void OnLoad(EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -54,6 +57,8 @@ namespace test
         {
             Noi_gao gao = new Noi_gao(MyComm);
             gao.ThayDoi += HMI_ThayDoi;
+            gao._powerState = Power_Light.DiscreteValue1;
+            gao._autmanState = AutMan_Light.DiscreteValue1;
             gao.ShowDialog();
         }
 
@@ -62,6 +67,11 @@ namespace test
             MyPlc = new Plc(CpuType.S71200, _ip, 0, 0);
             MyComm = new PLCComm();
             MyPlc.Open();
+
+            // Get AUTMAN and POWER current state
+            Power_Light.DiscreteValue1 = (bool)MyPlc.Read(_powerAddressDB);
+            AutMan_Light.DiscreteValue1 = (bool)MyPlc.Read(_autmanAddressDB);
+
             if (MyPlc.IsConnected)
             {
                 timerComm.Start();
@@ -86,6 +96,19 @@ namespace test
             MyPlc.WriteClass(MyComm, 1);
             timerComm.Start();
         }
+
+        private void Power_Light_Click(object sender, EventArgs e)
+        {
+            Power_Light.DiscreteValue1 = !(Power_Light.DiscreteValue1);
+            MyPlc.Write(_powerAddressDB, Power_Light.DiscreteValue1);
+        }
+
+        private void AutMan_Light_Click(object sender, EventArgs e)
+        {
+            AutMan_Light.DiscreteValue1 = !(AutMan_Light.DiscreteValue1);
+            MyPlc.Write(_autmanAddressDB, AutMan_Light.DiscreteValue1);
+        }
+
     }
 }
 
