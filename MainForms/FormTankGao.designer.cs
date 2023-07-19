@@ -70,6 +70,7 @@ namespace test
             this.Power_Light = new SymbolFactoryDotNet.StandardControl();
             this.label1 = new System.Windows.Forms.Label();
             this.AutMan_Light = new SymbolFactoryDotNet.StandardControl();
+            this.configButton = new SymbolFactoryDotNet.StandardControl();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
@@ -103,6 +104,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.configButton)).BeginInit();
             this.SuspendLayout();
             // 
             // standardControl1
@@ -983,12 +985,32 @@ namespace test
             this.AutMan_Light.SymbolHandle = ((long)(646493301));
             this.AutMan_Light.TabIndex = 220;
             // 
+            // configButton
+            // 
+            this.configButton.AnalogIntValue1 = ((short)(0));
+            this.configButton.AnalogValue1 = 0D;
+            this.configButton.BackColor = System.Drawing.Color.Transparent;
+            this.configButton.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.configButton.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.configButton.BlinkColor = System.Drawing.Color.Red;
+            this.configButton.Category = "1IND.cat2";
+            this.configButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.configButton.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("configButton.DebugData"));
+            this.configButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.configButton.Location = new System.Drawing.Point(663, 16);
+            this.configButton.Name = "configButton";
+            this.configButton.Size = new System.Drawing.Size(67, 65);
+            this.configButton.SymbolHandle = ((long)(57133));
+            this.configButton.TabIndex = 225;
+            this.configButton.Click += new System.EventHandler(this.configButton_Click);
+            // 
             // Noi_gao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1078, 577);
+            this.Controls.Add(this.configButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Power_Light);
             this.Controls.Add(this.label1);
@@ -1068,6 +1090,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.configButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1115,5 +1138,6 @@ namespace test
         private SymbolFactoryDotNet.StandardControl Power_Light;
         private System.Windows.Forms.Label label1;
         private SymbolFactoryDotNet.StandardControl AutMan_Light;
+        private SymbolFactoryDotNet.StandardControl configButton;
     }
 }

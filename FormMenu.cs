@@ -16,6 +16,10 @@ namespace test
 {
     public partial class FormMenu : Form
     {
+        public static bool s_isAdmin = false;
+        public static bool s_powerState = false, s_autmanState = false;
+        public static ValveSwitch s_switchCount = new ValveSwitch();
+
         private Plc _myPlc;
         private readonly string _ip = "169.254.116.178";
         public Plc MyPlc { get => _myPlc; private set => _myPlc = value; }
@@ -33,6 +37,7 @@ namespace test
         public FormMenu()
         {
             InitializeComponent();
+            s_switchCount.PropertyChanged += S_switchCount_PropertyChanged;
         }
 
         public event EventHandler DangXuat;
@@ -57,8 +62,6 @@ namespace test
         {
             Noi_gao gao = new Noi_gao(MyComm);
             gao.ThayDoi += HMI_ThayDoi;
-            gao._powerState = Power_Light.DiscreteValue1;
-            gao._autmanState = AutMan_Light.DiscreteValue1;
             gao.ShowDialog();
         }
 
@@ -70,13 +73,22 @@ namespace test
 
             // Get AUTMAN and POWER current state
             Power_Light.DiscreteValue1 = (bool)MyPlc.Read(_powerAddressDB);
+            s_powerState = Power_Light.DiscreteValue1;
             AutMan_Light.DiscreteValue1 = (bool)MyPlc.Read(_autmanAddressDB);
+            s_autmanState = AutMan_Light.DiscreteValue1;
 
             if (MyPlc.IsConnected)
             {
                 timerComm.Start();
                 timerComm.Tick += new System.EventHandler(this.timerComm_Tick);
             }
+
+            GetSwitchCount();
+        }
+
+        private void GetSwitchCount()
+        {
+            MyPlc.ReadClass(s_switchCount, 3);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -100,14 +112,25 @@ namespace test
         private void Power_Light_Click(object sender, EventArgs e)
         {
             Power_Light.DiscreteValue1 = !(Power_Light.DiscreteValue1);
+            s_powerState = Power_Light.DiscreteValue1;
             MyPlc.Write(_powerAddressDB, Power_Light.DiscreteValue1);
         }
 
         private void AutMan_Light_Click(object sender, EventArgs e)
         {
             AutMan_Light.DiscreteValue1 = !(AutMan_Light.DiscreteValue1);
+            s_autmanState = AutMan_Light.DiscreteValue1;
             MyPlc.Write(_autmanAddressDB, AutMan_Light.DiscreteValue1);
         }
+
+        private void S_switchCount_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            timerComm.Stop();
+            MyPlc.WriteClass(s_switchCount, 3);
+            timerComm.Start();
+        }
+
+
 
     }
 }

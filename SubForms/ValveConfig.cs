@@ -14,8 +14,6 @@ namespace test.SubForms
 {
     public partial class ValveConfig : Form, INotifyPropertyChanged
     {
-        private bool _powerState;
-        private bool _autmanState;
         private string _state;
         public string State 
         { 
@@ -38,22 +36,16 @@ namespace test.SubForms
             base.OnLoad(e);
         }
 
-        public ValveConfig(StandardControl currentValve, bool powerState, bool autmanState)
+        public ValveConfig(StandardControl currentValve)
         {
             InitializeComponent();
             CurrentValve = currentValve;
-            _powerState = powerState;
-            _autmanState = autmanState;
 
-            onButton.Visible = !_autmanState;
-            offButton.Visible = !_autmanState;
+            onButton.Visible = !(FormMenu.s_autmanState);
+            offButton.Visible = !(FormMenu.s_autmanState);
 
             updateState(CurrentValve.DiscreteValue1);
 
-            Binding valveNameBinding = new Binding("Text", CurrentValve, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
-            valveName.DataBindings.Add(valveNameBinding);
-            Binding valveStateBinding = new Binding("Text", this, "State", false, DataSourceUpdateMode.OnPropertyChanged);
-            valveState.DataBindings.Add(valveStateBinding);
         }
 
         private void updateState(bool state)
@@ -63,7 +55,7 @@ namespace test.SubForms
 
         private void onButton_Click(object sender, EventArgs e)
         {
-            CurrentValve.DiscreteValue1 = true & _powerState;
+            CurrentValve.DiscreteValue1 = true & FormMenu.s_powerState;
             updateState(CurrentValve.DiscreteValue1);
             StateChanged.Invoke(this.CurrentValve, EventArgs.Empty);
         }
@@ -81,6 +73,14 @@ namespace test.SubForms
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
+        }
+
+        private void ValveConfig_Load(object sender, EventArgs e)
+        {
+            Binding valveNameBinding = new Binding("Text", CurrentValve, "Name", false, DataSourceUpdateMode.OnPropertyChanged);
+            valveName.DataBindings.Add(valveNameBinding);
+            Binding valveStateBinding = new Binding("Text", this, "State", false, DataSourceUpdateMode.OnPropertyChanged);
+            valveState.DataBindings.Add(valveStateBinding);
         }
     }
 }

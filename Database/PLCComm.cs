@@ -9,37 +9,37 @@ namespace test.Database
 {
     public class PLCComm : INotifyPropertyChanged
     {
-        private bool _V13;
-        private bool _V14;
-        private bool _V17;
-        public bool V13 
+        private bool _V13D;
+        private bool _V14D;
+        private bool _V17D;
+        public bool V13D 
         { 
-            get => this._V13; 
+            get => this._V13D; 
             set
             {
-                if (this._V13 == value) return;
-                this._V13 = value;
-                NotifyPropertyChanged("V13");
+                if (this._V13D == value) return;
+                this._V13D = value;
+                NotifyPropertyChanged("V13D");
             }
         }
-        public bool V14 
+        public bool V14D
         {
-            get => this._V14;
+            get => this._V14D;
             set
             {
-                if (this._V14 == value) return;
-                this._V14 = value;
-                NotifyPropertyChanged("V14");
+                if (this._V14D == value) return;
+                this._V14D = value;
+                NotifyPropertyChanged("V14D");
             }
         }
-        public bool V17 
+        public bool V17D
         {
-            get => this._V17;
+            get => this._V17D;
             set
             {
-                if (this._V17 == value) return;
-                this._V17 = value;
-                NotifyPropertyChanged("V17");
+                if (this._V17D == value) return;
+                this._V17D = value;
+                NotifyPropertyChanged("V17D");
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

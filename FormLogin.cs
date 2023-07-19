@@ -64,18 +64,13 @@ namespace test
                     conn.Close();
                 }
 
-                // Kiểm tra quyền
-                if (_taikhoan.QuyenTruyCap == true)
-                {
-                    this.Hide();
-                    FormMenu f = new FormMenu();
-                    f.Show();
-                    f.DangXuat += F_DangXuat;
-                }
-                else
-                {
-                    MessageBox.Show("BẠN KHÔNG CÓ QUYỀN TRUY CẬP !", "WARNING");
-                }
+
+                this.Hide();
+                FormMenu f = new FormMenu();
+                FormMenu.s_isAdmin = _taikhoan.QuyenTruyCap;
+                f.Show();
+                f.DangXuat += F_DangXuat;
+
             }
             else
             {

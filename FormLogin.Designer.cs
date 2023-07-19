@@ -41,7 +41,7 @@ namespace test
             // 
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(67, 87);
+            this.username.Location = new System.Drawing.Point(82, 86);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(141, 25);
             this.username.TabIndex = 0;

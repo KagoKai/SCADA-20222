@@ -16,6 +16,8 @@ namespace test
 {
     public partial class Noi_gao : ScadaUI
     {
+        static public UInt16 s_maxSwitchCount = 0;
+
         public PLCComm CurrentComm { get; set; }
 
         protected override void OnLoad(EventArgs e)
@@ -32,21 +34,29 @@ namespace test
             V13.Click += valve_Click;
             V14.Click += valve_Click;
             V17.Click += valve_Click;
+        }
 
-            Binding bind_V13_State = new Binding("DiscreteValue1", this.CurrentComm, "V13", false, DataSourceUpdateMode.OnPropertyChanged);
-            V13.DataBindings.Add(bind_V13_State);
-
-            Binding bind_V14_State = new Binding("DiscreteValue1", this.CurrentComm, "V14", false, DataSourceUpdateMode.OnPropertyChanged);
-            V14.DataBindings.Add(bind_V14_State);
-
-            Binding bind_V17_State = new Binding("DiscreteValue1", this.CurrentComm, "V17", false, DataSourceUpdateMode.OnPropertyChanged);
-            V17.DataBindings.Add(bind_V17_State);
+        private void configButton_Click(object sender, EventArgs e)
+        {
+            AdminConfigGao adminCfg = new AdminConfigGao();
+            adminCfg.ShowDialog();
         }
 
         private void Noi_gao_Load(object sender, EventArgs e)
         {
-            Power_Light.DiscreteValue1 = _powerState;
-            AutMan_Light.DiscreteValue1 = _autmanState;
+            Power_Light.DiscreteValue1 = FormMenu.s_powerState;
+            AutMan_Light.DiscreteValue1 = FormMenu.s_autmanState;
+            configButton.Visible = FormMenu.s_isAdmin;
+
+            Binding bind_V13_State = new Binding("DiscreteValue1", this.CurrentComm, "V13D", false, DataSourceUpdateMode.OnPropertyChanged);
+            V13.DataBindings.Add(bind_V13_State);
+
+            Binding bind_V14_State = new Binding("DiscreteValue1", this.CurrentComm, "V14D", false, DataSourceUpdateMode.OnPropertyChanged);
+            V14.DataBindings.Add(bind_V14_State);
+
+            Binding bind_V17_State = new Binding("DiscreteValue1", this.CurrentComm, "V17D", false, DataSourceUpdateMode.OnPropertyChanged);
+            V17.DataBindings.Add(bind_V17_State);
         }
+
     }
 }

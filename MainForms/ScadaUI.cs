@@ -12,9 +12,6 @@ namespace test.MainForms
 {
     public class ScadaUI : Form
     {
-        public bool _powerState;
-        public bool _autmanState;
-
         public event EventHandler ThayDoi;
 
         private protected void returnButton_Click(object sender, EventArgs e)
@@ -24,7 +21,7 @@ namespace test.MainForms
 
         private protected void valve_Click(object sender, EventArgs e)
         {
-            ValveConfig valveCfg = new ValveConfig((StandardControl)sender, _powerState, _autmanState);
+            ValveConfig valveCfg = new ValveConfig((StandardControl)sender);
             valveCfg.StateChanged += Valve_StateChanged;
             valveCfg.ShowDialog();
         }

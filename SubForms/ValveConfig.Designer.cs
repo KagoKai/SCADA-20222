@@ -112,7 +112,7 @@ namespace test.SubForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 165);
+            this.ClientSize = new System.Drawing.Size(296, 165);
             this.Controls.Add(this.valveName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.valveState);
@@ -124,6 +124,7 @@ namespace test.SubForms
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Điều khiển Van";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.Load += new System.EventHandler(this.ValveConfig_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
