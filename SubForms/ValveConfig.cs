@@ -14,6 +14,12 @@ namespace test.SubForms
 {
     public partial class ValveConfig : Form, INotifyPropertyChanged
     {
+        protected override void OnLoad(EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            base.OnLoad(e);
+        }
+
         private string _state;
         public string State 
         { 
@@ -27,13 +33,15 @@ namespace test.SubForms
         }
         public StandardControl CurrentValve { get; set; }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        
         public event EventHandler StateChanged;
-
-        protected override void OnLoad(EventArgs e)
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void NotifyPropertyChanged(string propertyName)
         {
-            this.WindowState = FormWindowState.Normal;
-            base.OnLoad(e);
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
         }
 
         public ValveConfig(StandardControl currentValve)
@@ -67,13 +75,6 @@ namespace test.SubForms
             StateChanged.Invoke(this.CurrentValve, EventArgs.Empty);
         }
 
-        public void NotifyPropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
 
         private void ValveConfig_Load(object sender, EventArgs e)
         {

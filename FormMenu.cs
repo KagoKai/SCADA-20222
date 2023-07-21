@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 using S7.Net;
 using SymbolFactoryDotNet;
 using test.MainForms;
@@ -16,6 +17,12 @@ namespace test
 {
     public partial class FormMenu : Form
     {
+        protected override void OnLoad(EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            base.OnLoad(e);
+        }
+
         public static bool s_isAdmin = false;
         public static bool s_powerState = false, s_autmanState = false;
         public static ValveSwitch s_switchCount = new ValveSwitch();
@@ -27,17 +34,43 @@ namespace test
 
         private readonly string _powerAddressDB = "DB2.DBX0.0";
         private readonly string _autmanAddressDB = "DB2.DBX0.1";
-            
-        protected override void OnLoad(EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            base.OnLoad(e);
-        }
 
         public FormMenu()
         {
             InitializeComponent();
             s_switchCount.PropertyChanged += S_switchCount_PropertyChanged;
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            MyPlc = new Plc(CpuType.S71200, _ip, 0, 0);
+            MyComm = new PLCComm();
+            MyComm.SwitchCountUp += MyComm_SwitchCountUp;
+            MyPlc.Open();
+
+            // Get AUTMAN and POWER current state
+            Power_Light.DiscreteValue1 = (bool)MyPlc.Read(_powerAddressDB);
+            s_powerState = Power_Light.DiscreteValue1;
+            AutMan_Light.DiscreteValue1 = (bool)MyPlc.Read(_autmanAddressDB);
+            s_autmanState = AutMan_Light.DiscreteValue1;
+
+            if (MyPlc.IsConnected)
+            {
+                timerComm.Start();
+                timerComm.Tick += new System.EventHandler(this.timerComm_Tick);
+            }
+
+            GetSwitchCount();
+        }
+
+        private void MyComm_SwitchCountUp(object sender, EventArgs e)
+        {
+            PropertyInfo prop = s_switchCount.GetType().GetProperty(sender.ToString());
+            if (prop != null)
+            {
+                UInt16 currentCount = (UInt16)prop.GetValue(s_switchCount);
+                prop.SetValue(s_switchCount, (UInt16)(currentCount + 1));
+            }
         }
 
         public event EventHandler DangXuat;
@@ -63,27 +96,6 @@ namespace test
             Noi_gao gao = new Noi_gao(MyComm);
             gao.ThayDoi += HMI_ThayDoi;
             gao.ShowDialog();
-        }
-
-        private void FormMenu_Load(object sender, EventArgs e)
-        {
-            MyPlc = new Plc(CpuType.S71200, _ip, 0, 0);
-            MyComm = new PLCComm();
-            MyPlc.Open();
-
-            // Get AUTMAN and POWER current state
-            Power_Light.DiscreteValue1 = (bool)MyPlc.Read(_powerAddressDB);
-            s_powerState = Power_Light.DiscreteValue1;
-            AutMan_Light.DiscreteValue1 = (bool)MyPlc.Read(_autmanAddressDB);
-            s_autmanState = AutMan_Light.DiscreteValue1;
-
-            if (MyPlc.IsConnected)
-            {
-                timerComm.Start();
-                timerComm.Tick += new System.EventHandler(this.timerComm_Tick);
-            }
-
-            GetSwitchCount();
         }
 
         private void GetSwitchCount()
@@ -129,8 +141,6 @@ namespace test
             MyPlc.WriteClass(s_switchCount, 3);
             timerComm.Start();
         }
-
-
 
     }
 }

@@ -13,39 +13,41 @@ namespace test.Database
         UInt16 _V14D_switchCount;
         UInt16 _V17D_switchCount;
 
-        public UInt16 V13D_switchCount 
+        public UInt16 V13D 
         { 
             get => _V13D_switchCount; 
             set
             {
+                if (value >= Noi_gao.s_switchCountLimit) SwitchCountWarning?.Invoke(this, EventArgs.Empty);
                 if (this._V13D_switchCount == value) return;
                 this._V13D_switchCount = value;
-                NotifyPropertyChanged("V13D_switchCount");
+                NotifyPropertyChanged("V13D");
             }
         }
-        public UInt16 V14D_switchCount 
+        public UInt16 V14D
         {
             get => _V14D_switchCount;
             set
             {
+                if (value >= Noi_gao.s_switchCountLimit) SwitchCountWarning?.Invoke(this, EventArgs.Empty);
                 if (this._V14D_switchCount == value) return;
                 this._V14D_switchCount = value;
-                NotifyPropertyChanged("V14D_switchCount");
+                NotifyPropertyChanged("V14D");
             }
         }
-        public UInt16 V17D_switchCount 
+        public UInt16 V17D
         {
             get => _V17D_switchCount;
             set
             {
+                if (value >= Noi_gao.s_switchCountLimit) SwitchCountWarning?.Invoke(this, EventArgs.Empty);
                 if (this._V17D_switchCount == value) return;
                 this._V17D_switchCount = value;
-                NotifyPropertyChanged("V17D_switchCount");
+                NotifyPropertyChanged("V17D");
             }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-
         public void NotifyPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
@@ -54,5 +56,6 @@ namespace test.Database
             }
         }
 
+        public event EventHandler SwitchCountWarning;
     }
 }

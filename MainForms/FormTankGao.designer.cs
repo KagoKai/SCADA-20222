@@ -71,6 +71,7 @@ namespace test
             this.label1 = new System.Windows.Forms.Label();
             this.AutMan_Light = new SymbolFactoryDotNet.StandardControl();
             this.configButton = new SymbolFactoryDotNet.StandardControl();
+            this.WarningSym = new SymbolFactoryDotNet.StandardControl();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
@@ -105,6 +106,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.configButton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WarningSym)).BeginInit();
             this.SuspendLayout();
             // 
             // standardControl1
@@ -1004,12 +1006,33 @@ namespace test
             this.configButton.TabIndex = 225;
             this.configButton.Click += new System.EventHandler(this.configButton_Click);
             // 
+            // WarningSym
+            // 
+            this.WarningSym.AnalogIntValue1 = ((short)(0));
+            this.WarningSym.AnalogValue1 = 0D;
+            this.WarningSym.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.WarningSym.BackColor = System.Drawing.Color.Transparent;
+            this.WarningSym.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.WarningSym.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Red, "Band1"));
+            this.WarningSym.BlinkColor = System.Drawing.Color.Red;
+            this.WarningSym.Category = "1INTL.cat2";
+            this.WarningSym.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("WarningSym.DebugData"));
+            this.WarningSym.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.WarningSym.Location = new System.Drawing.Point(987, 19);
+            this.WarningSym.Margin = new System.Windows.Forms.Padding(2);
+            this.WarningSym.Name = "WarningSym";
+            this.WarningSym.Size = new System.Drawing.Size(70, 62);
+            this.WarningSym.SymbolHandle = ((long)(935387866));
+            this.WarningSym.TabIndex = 226;
+            this.WarningSym.Visible = false;
+            // 
             // Noi_gao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1078, 577);
+            this.Controls.Add(this.WarningSym);
             this.Controls.Add(this.configButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Power_Light);
@@ -1091,6 +1114,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AutMan_Light)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.configButton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.WarningSym)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1139,5 +1163,6 @@ namespace test
         private System.Windows.Forms.Label label1;
         private SymbolFactoryDotNet.StandardControl AutMan_Light;
         private SymbolFactoryDotNet.StandardControl configButton;
+        private SymbolFactoryDotNet.StandardControl WarningSym;
     }
 }

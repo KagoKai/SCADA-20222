@@ -19,6 +19,7 @@ namespace test.Database
             {
                 if (this._V13D == value) return;
                 this._V13D = value;
+                if (value == false) SwitchCountUp.Invoke("V13D", EventArgs.Empty);
                 NotifyPropertyChanged("V13D");
             }
         }
@@ -29,6 +30,7 @@ namespace test.Database
             {
                 if (this._V14D == value) return;
                 this._V14D = value;
+                if (value == false) SwitchCountUp.Invoke("V14D", EventArgs.Empty);
                 NotifyPropertyChanged("V14D");
             }
         }
@@ -39,6 +41,7 @@ namespace test.Database
             {
                 if (this._V17D == value) return;
                 this._V17D = value;
+                if (value == false) SwitchCountUp.Invoke("V17D", EventArgs.Empty);
                 NotifyPropertyChanged("V17D");
             }
         }
@@ -50,5 +53,6 @@ namespace test.Database
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
+        public event EventHandler SwitchCountUp;
     }
 }
