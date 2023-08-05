@@ -22,11 +22,11 @@ namespace test
             base.OnLoad(e);
         }
 
-        static public UInt16 s_maxSwitchCount = 0;
-        static public readonly UInt16 s_switchCountLimit = 9;
-
+        static public UInt16 s_maxSwitchCount;
+        static public int s_switchCountLimit;
         public PLCComm CurrentComm { get; set; }
 
+        public event EventHandler gioiHan_ThayDoi;
         private void AdminCfg_WarningReset(object sender, EventArgs e)
         {
             bool isSafe = (FormMenu.s_switchCount.V13D < s_switchCountLimit)
@@ -40,14 +40,15 @@ namespace test
             WarningSym.Visible = true;
         }
 
+        private void GioiHan_ThayDoi(object sender, EventArgs e)
+        {
+            gioiHan_ThayDoi.Invoke(null, EventArgs.Empty);
+        }
+
         public Noi_gao(PLCComm currentComm)
         {
             InitializeComponent();
             CurrentComm = currentComm;
-            WarningSym.DiscreteValue1 = true;
-            WarningSym.Visible = (FormMenu.s_switchCount.V13D >= s_switchCountLimit)
-                       || (FormMenu.s_switchCount.V14D >= s_switchCountLimit)
-                       || (FormMenu.s_switchCount.V17D >= s_switchCountLimit);
             FormMenu.s_switchCount.SwitchCountWarning += S_switchCount_SwitchCountWarning;
         }
 
@@ -55,7 +56,8 @@ namespace test
         {
             AdminConfigGao adminCfg = new AdminConfigGao();
             adminCfg.WarningReset += AdminCfg_WarningReset;
-            adminCfg.Show();
+            adminCfg.DatGioiHan += GioiHan_ThayDoi;
+            adminCfg.ShowDialog();
         }
 
         private void Noi_gao_Load(object sender, EventArgs e)
@@ -84,6 +86,11 @@ namespace test
             Bom_sang_Malt.DataBindings.Add(bind_BomSangMalt_State);
             Binding bind_BomNuocHoi_State = new Binding("DiscreteValue1", this.CurrentComm, "BomNuocHoi", false, DataSourceUpdateMode.OnPropertyChanged);
             Bom_nuoc_hoi.DataBindings.Add(bind_BomNuocHoi_State);
+
+            WarningSym.DiscreteValue1 = true;
+            WarningSym.Visible = (FormMenu.s_switchCount.V13D >= s_switchCountLimit)
+                       || (FormMenu.s_switchCount.V14D >= s_switchCountLimit)
+                       || (FormMenu.s_switchCount.V17D >= s_switchCountLimit);
         }
 
     }

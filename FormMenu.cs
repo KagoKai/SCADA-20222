@@ -34,6 +34,7 @@ namespace test
 
         private readonly string _powerAddressDB = "DB2.DBX0.0";
         private readonly string _autmanAddressDB = "DB2.DBX0.1";
+        private readonly string _TankGaoLimitAddressDB = "DB2.DBW2";
 
         public FormMenu()
         {
@@ -95,6 +96,9 @@ namespace test
         {
             Noi_gao gao = new Noi_gao(MyComm);
             gao.ThayDoi += HMI_ThayDoi;
+            Noi_gao.s_maxSwitchCount = (ushort)MyPlc.Read(_TankGaoLimitAddressDB);
+            Noi_gao.s_switchCountLimit = (int)Math.Floor(0.9 * Noi_gao.s_maxSwitchCount);
+            gao.gioiHan_ThayDoi += GhiGioiHanMoi;
             gao.ShowDialog();
         }
 
@@ -118,6 +122,13 @@ namespace test
         {
             timerComm.Stop();
             MyPlc.WriteClass(MyComm, 1);
+            timerComm.Start();
+        }
+
+        public void GhiGioiHanMoi(object sender, EventArgs e)
+        {
+            timerComm.Stop();
+            MyPlc.Write(_TankGaoLimitAddressDB, Noi_gao.s_maxSwitchCount);
             timerComm.Start();
         }
 

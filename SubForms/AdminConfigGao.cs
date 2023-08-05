@@ -13,6 +13,7 @@ namespace test.SubForms
     public partial class AdminConfigGao : Form
     {
         public event EventHandler WarningReset;
+        public event EventHandler DatGioiHan;
 
         public AdminConfigGao()
         {
@@ -38,6 +39,7 @@ namespace test.SubForms
             {
                 Noi_gao.s_maxSwitchCount = x;
                 SwitchCount.Text = Noi_gao.s_maxSwitchCount.ToString();
+                DatGioiHan.Invoke(null, EventArgs.Empty);
             }
             else
             {
