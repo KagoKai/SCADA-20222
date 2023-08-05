@@ -12,6 +12,9 @@ namespace test.Database
         private bool _V13D;
         private bool _V14D;
         private bool _V17D;
+        private bool _bomCapCIP;
+        private bool _bomSangMalt;
+        private bool _bomNuocHoi;
         public bool V13D 
         { 
             get => this._V13D; 
@@ -43,6 +46,36 @@ namespace test.Database
                 this._V17D = value;
                 if (value == false) SwitchCountUp.Invoke("V17D", EventArgs.Empty);
                 NotifyPropertyChanged("V17D");
+            }
+        }
+        public bool BomCapCIP
+        {
+            get => this._bomCapCIP;
+            set
+            {
+                if (this._bomCapCIP == value) return;
+                this._bomCapCIP = value;
+                NotifyPropertyChanged("BomCapCIP");
+            }
+        }
+        public bool BomSangMalt
+        {
+            get => this._bomSangMalt;
+            set
+            {
+                if (this._bomSangMalt == value) return;
+                this._bomSangMalt = value;
+                NotifyPropertyChanged("BomSangMalt");
+            }
+        }
+        public bool BomNuocHoi
+        {
+            get => this._bomNuocHoi;
+            set
+            {
+                if (this._bomNuocHoi == value) return;
+                this._bomNuocHoi = value;
+                NotifyPropertyChanged("BomNuocHoi");
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

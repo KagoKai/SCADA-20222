@@ -33,7 +33,7 @@ namespace test
             this.standardControl1 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl3 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl2 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl24 = new SymbolFactoryDotNet.StandardControl();
+            this.Bom_cap_CIP = new SymbolFactoryDotNet.StandardControl();
             this.standardControl32 = new SymbolFactoryDotNet.StandardControl();
             this.V13 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
@@ -61,8 +61,8 @@ namespace test
             this.V17 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl18 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl19 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl20 = new SymbolFactoryDotNet.StandardControl();
-            this.standardControl21 = new SymbolFactoryDotNet.StandardControl();
+            this.Bom_sang_Malt = new SymbolFactoryDotNet.StandardControl();
+            this.Bom_nuoc_hoi = new SymbolFactoryDotNet.StandardControl();
             this.standardControl22 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl23 = new SymbolFactoryDotNet.StandardControl();
             this.cipTitle = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_cap_CIP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.V13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).BeginInit();
@@ -99,8 +99,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.V17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_sang_Malt)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_nuoc_hoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).BeginInit();
@@ -183,29 +183,25 @@ namespace test
             this.standardControl2.SymbolHandle = ((long)(1497078400));
             this.standardControl2.TabIndex = 3;
             // 
-            // standardControl24
+            // Bom_cap_CIP
             // 
-            this.standardControl24.AnalogIntValue1 = ((short)(0));
-            this.standardControl24.AnalogValue1 = 0D;
-            this.standardControl24.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl24.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl24.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl24.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl24.Category = "1PMP.cat2";
-            this.standardControl24.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl24.DebugData"));
-            this.standardControl24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl24.Location = new System.Drawing.Point(266, 313);
-            this.standardControl24.Margin = new System.Windows.Forms.Padding(2);
-            this.standardControl24.Name = "standardControl24";
-            this.standardControl24.Size = new System.Drawing.Size(60, 58);
-            this.standardControl24.SymbolHandle = ((long)(2096695874));
-            this.standardControl24.TabIndex = 12;
+            this.Bom_cap_CIP.AnalogIntValue1 = ((short)(0));
+            this.Bom_cap_CIP.AnalogValue1 = 0D;
+            this.Bom_cap_CIP.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.Bom_cap_CIP.BackColor = System.Drawing.Color.Transparent;
+            this.Bom_cap_CIP.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.Bom_cap_CIP.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(64))))), "Band1"));
+            this.Bom_cap_CIP.BlinkColor = System.Drawing.Color.Red;
+            this.Bom_cap_CIP.Category = "1PMP.cat2";
+            this.Bom_cap_CIP.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bom_cap_CIP.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("Bom_cap_CIP.DebugData"));
+            this.Bom_cap_CIP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Bom_cap_CIP.Location = new System.Drawing.Point(266, 313);
+            this.Bom_cap_CIP.Margin = new System.Windows.Forms.Padding(2);
+            this.Bom_cap_CIP.Name = "Bom_cap_CIP";
+            this.Bom_cap_CIP.Size = new System.Drawing.Size(60, 58);
+            this.Bom_cap_CIP.SymbolHandle = ((long)(2096695874));
+            this.Bom_cap_CIP.TabIndex = 12;
             // 
             // standardControl32
             // 
@@ -817,53 +813,45 @@ namespace test
             this.standardControl19.SymbolHandle = ((long)(2078383901));
             this.standardControl19.TabIndex = 214;
             // 
-            // standardControl20
+            // Bom_sang_Malt
             // 
-            this.standardControl20.AnalogIntValue1 = ((short)(0));
-            this.standardControl20.AnalogValue1 = 0D;
-            this.standardControl20.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl20.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl20.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl20.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl20.Category = "1PMP.cat2";
-            this.standardControl20.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl20.DebugData"));
-            this.standardControl20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl20.Location = new System.Drawing.Point(758, 398);
-            this.standardControl20.Margin = new System.Windows.Forms.Padding(2);
-            this.standardControl20.Name = "standardControl20";
-            this.standardControl20.Size = new System.Drawing.Size(60, 58);
-            this.standardControl20.SymbolHandle = ((long)(2096695874));
-            this.standardControl20.TabIndex = 215;
+            this.Bom_sang_Malt.AnalogIntValue1 = ((short)(0));
+            this.Bom_sang_Malt.AnalogValue1 = 0D;
+            this.Bom_sang_Malt.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.Bom_sang_Malt.BackColor = System.Drawing.Color.Transparent;
+            this.Bom_sang_Malt.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.Bom_sang_Malt.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(64))))), "Band1"));
+            this.Bom_sang_Malt.BlinkColor = System.Drawing.Color.Red;
+            this.Bom_sang_Malt.Category = "1PMP.cat2";
+            this.Bom_sang_Malt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bom_sang_Malt.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("Bom_sang_Malt.DebugData"));
+            this.Bom_sang_Malt.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Bom_sang_Malt.Location = new System.Drawing.Point(758, 398);
+            this.Bom_sang_Malt.Margin = new System.Windows.Forms.Padding(2);
+            this.Bom_sang_Malt.Name = "Bom_sang_Malt";
+            this.Bom_sang_Malt.Size = new System.Drawing.Size(60, 58);
+            this.Bom_sang_Malt.SymbolHandle = ((long)(2096695874));
+            this.Bom_sang_Malt.TabIndex = 215;
             // 
-            // standardControl21
+            // Bom_nuoc_hoi
             // 
-            this.standardControl21.AnalogIntValue1 = ((short)(0));
-            this.standardControl21.AnalogValue1 = 0D;
-            this.standardControl21.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl21.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkSolid, System.Drawing.Color.Green, "Band3"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl21.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl21.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl21.Category = "1PMP.cat2";
-            this.standardControl21.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl21.DebugData"));
-            this.standardControl21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl21.Location = new System.Drawing.Point(758, 462);
-            this.standardControl21.Margin = new System.Windows.Forms.Padding(2);
-            this.standardControl21.Name = "standardControl21";
-            this.standardControl21.Size = new System.Drawing.Size(60, 58);
-            this.standardControl21.SymbolHandle = ((long)(2096695874));
-            this.standardControl21.TabIndex = 216;
+            this.Bom_nuoc_hoi.AnalogIntValue1 = ((short)(0));
+            this.Bom_nuoc_hoi.AnalogValue1 = 0D;
+            this.Bom_nuoc_hoi.AnimationMode = SymbolFactoryNetEngine.AnimationModeOptions.DiscreteColorFill;
+            this.Bom_nuoc_hoi.BackColor = System.Drawing.Color.Transparent;
+            this.Bom_nuoc_hoi.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.Bom_nuoc_hoi.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(64))))), "Band1"));
+            this.Bom_nuoc_hoi.BlinkColor = System.Drawing.Color.Red;
+            this.Bom_nuoc_hoi.Category = "1PMP.cat2";
+            this.Bom_nuoc_hoi.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bom_nuoc_hoi.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("Bom_nuoc_hoi.DebugData"));
+            this.Bom_nuoc_hoi.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Bom_nuoc_hoi.Location = new System.Drawing.Point(758, 462);
+            this.Bom_nuoc_hoi.Margin = new System.Windows.Forms.Padding(2);
+            this.Bom_nuoc_hoi.Name = "Bom_nuoc_hoi";
+            this.Bom_nuoc_hoi.Size = new System.Drawing.Size(60, 58);
+            this.Bom_nuoc_hoi.SymbolHandle = ((long)(2096695874));
+            this.Bom_nuoc_hoi.TabIndex = 216;
             // 
             // standardControl22
             // 
@@ -1041,8 +1029,8 @@ namespace test
             this.Controls.Add(this.cipTitle);
             this.Controls.Add(this.standardControl23);
             this.Controls.Add(this.standardControl22);
-            this.Controls.Add(this.standardControl21);
-            this.Controls.Add(this.standardControl20);
+            this.Controls.Add(this.Bom_nuoc_hoi);
+            this.Controls.Add(this.Bom_sang_Malt);
             this.Controls.Add(this.standardControl19);
             this.Controls.Add(this.standardControl18);
             this.Controls.Add(this.V17);
@@ -1063,7 +1051,7 @@ namespace test
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.standardControl42);
             this.Controls.Add(this.V13);
-            this.Controls.Add(this.standardControl24);
+            this.Controls.Add(this.Bom_cap_CIP);
             this.Controls.Add(this.standardControl2);
             this.Controls.Add(this.standardControl3);
             this.Controls.Add(this.standardControl36);
@@ -1083,7 +1071,7 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_cap_CIP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.V13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl17)).EndInit();
@@ -1107,8 +1095,8 @@ namespace test
             ((System.ComponentModel.ISupportInitialize)(this.V17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_sang_Malt)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Bom_nuoc_hoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Power_Light)).EndInit();
@@ -1125,7 +1113,7 @@ namespace test
         private SymbolFactoryDotNet.StandardControl standardControl1;
         private SymbolFactoryDotNet.StandardControl standardControl3;
         private SymbolFactoryDotNet.StandardControl standardControl2;
-        private SymbolFactoryDotNet.StandardControl standardControl24;
+        private SymbolFactoryDotNet.StandardControl Bom_cap_CIP;
         private SymbolFactoryDotNet.StandardControl standardControl32;
         private SymbolFactoryDotNet.StandardControl V13;
         private SymbolFactoryDotNet.StandardControl standardControl17;
@@ -1153,8 +1141,8 @@ namespace test
         private SymbolFactoryDotNet.StandardControl V17;
         private SymbolFactoryDotNet.StandardControl standardControl18;
         private SymbolFactoryDotNet.StandardControl standardControl19;
-        private SymbolFactoryDotNet.StandardControl standardControl20;
-        private SymbolFactoryDotNet.StandardControl standardControl21;
+        private SymbolFactoryDotNet.StandardControl Bom_sang_Malt;
+        private SymbolFactoryDotNet.StandardControl Bom_nuoc_hoi;
         private SymbolFactoryDotNet.StandardControl standardControl22;
         private SymbolFactoryDotNet.StandardControl standardControl23;
         private System.Windows.Forms.Label cipTitle;

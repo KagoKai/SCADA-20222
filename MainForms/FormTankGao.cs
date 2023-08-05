@@ -68,6 +68,9 @@ namespace test
             V13.Click += valve_Click;
             V14.Click += valve_Click;
             V17.Click += valve_Click;
+            Bom_cap_CIP.Click += pump_Click;
+            Bom_sang_Malt.Click += pump_Click;
+            Bom_nuoc_hoi.Click += pump_Click;
 
             Binding bind_V13_State = new Binding("DiscreteValue1", this.CurrentComm, "V13D", false, DataSourceUpdateMode.OnPropertyChanged);
             V13.DataBindings.Add(bind_V13_State);
@@ -75,6 +78,12 @@ namespace test
             V14.DataBindings.Add(bind_V14_State);
             Binding bind_V17_State = new Binding("DiscreteValue1", this.CurrentComm, "V17D", false, DataSourceUpdateMode.OnPropertyChanged);
             V17.DataBindings.Add(bind_V17_State);
+            Binding bind_BomCapCIP_State = new Binding("DiscreteValue1", this.CurrentComm, "BomCapCIP", false, DataSourceUpdateMode.OnPropertyChanged);
+            Bom_cap_CIP.DataBindings.Add(bind_BomCapCIP_State);
+            Binding bind_BomSangMalt_State = new Binding("DiscreteValue1", this.CurrentComm, "BomSangMalt", false, DataSourceUpdateMode.OnPropertyChanged);
+            Bom_sang_Malt.DataBindings.Add(bind_BomSangMalt_State);
+            Binding bind_BomNuocHoi_State = new Binding("DiscreteValue1", this.CurrentComm, "BomNuocHoi", false, DataSourceUpdateMode.OnPropertyChanged);
+            Bom_nuoc_hoi.DataBindings.Add(bind_BomNuocHoi_State);
         }
 
     }
